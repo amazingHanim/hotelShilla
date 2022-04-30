@@ -1,0 +1,32 @@
+div.ga02{}
+div.ga02 section{}
+div.ga02 section .tabbar{
+    display: flex;
+}
+div.ga02 section .tabbar button{
+    width: calc(100%/4);
+    height: 40px;
+    margin: 0; padding: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #ccc;
+}
+div.ga02 section .tabbar button.clicked{
+    background-color: #999;
+}
+div.ga02 section .artGroup{}
+div.ga02 section .artGroup article{
+    display: none;
+}
+div.ga02 section .artGroup article:nth-of-type(1){
+    /* userAgent */
+    display: block;
+}
+div.ga02 section .artGroup article .image{
+    height: 400px;
+    background-color: #999;
+}
+div.ga02 section .artGroup article .texts{
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+}

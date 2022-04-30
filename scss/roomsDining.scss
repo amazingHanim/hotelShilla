@@ -1,0 +1,473 @@
+.content {
+
+    &.ctRooms, &.ctDining{
+        padding: 0 0 80px 0;
+    }
+
+    .selectInner,
+    .selectedInfoInner {
+        margin-top: 40px;
+        padding: 60px;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+        &.select {
+            .selectInner {
+                ul {
+                    li.option {
+                        &:first-of-type{
+                            margin-top: 0px;
+                        }
+                        margin-top: 20px;
+                        h4 {
+                            font-family: "Noto Sans KR";
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 50px;
+                            color: #333;
+                            display: block;
+                            position: relative;
+                            padding-left: 15px;
+                            &::after{
+                                position: absolute;
+                                display: block;
+                                content: "";
+                                top:18px;
+                                left: 0;
+                                width: 4px;height: 16px;
+                                background-color: #333;
+                            }
+                        }
+
+                        ul {
+                            display: flex;
+                            li {
+                                line-height: 40px;
+                                padding: 0 40px;
+                                border-radius: 20px;
+                                margin-right: 10px;
+                                border: solid 1px rgb(209, 209, 209);
+                                box-sizing: border-box;
+                                cursor: pointer;
+                                transition: all 0.3s;
+
+                                &:hover {
+                                    border: solid 1px rgb(209, 209, 209);
+                                    background-color: rgb(209, 209, 209);
+                                    color: #fff;
+                                }
+                            }
+
+                            li.on {
+                                border: solid 1px #000;
+                                background-color: #000;
+                                color: #fff;
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .btnbox {
+                margin-top: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .btn {
+                    margin: 0;
+                    transition: all 0.3s;
+                    &:hover{
+                        background-color: #0065AF;
+                    }
+                }
+            }
+        }
+
+        &.selectedInfo {
+            padding-bottom: 80px;
+
+            .selectedInfoInner {
+                margin-top: 20px;
+                padding-bottom: 0px;
+
+
+                h4 {
+                    font-family: "Noto Sans KR";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    color: #333;
+                }
+
+                .articleWrap {
+                    article {
+                        padding: 40px 0;
+                        box-sizing: border-box;
+                        border-bottom: solid 1px rgb(209, 209, 209);
+                        display: flex;
+                        justify-content: space-between;
+
+                        &:last-of-type {
+                            border: none;
+                        }
+                    }
+
+                    .image {
+                        width: 50%;
+                        height: 100%;
+                        // min-width: 400px;
+                        height: 360px;
+                        overflow: hidden;
+
+                    }
+                    @for $n from 1 to 6 {
+                        .i#{$n}{
+                            background-image: url('../img/dining_#{$n}.jpeg');
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                        }
+                    }
+
+                    .txtNBtns {
+                        padding: 0px 20px;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .txt {
+                            h5 {
+                                font-family: "Noto Sans KR";
+                                font-size: 21px;
+                                font-weight: 500;
+                                line-height: 40px;
+                            }
+
+                            p {
+                                margin-top: 20px;
+                            }
+
+                            .txtInfo {
+                                margin-top: 20px;
+                                display: flex;
+
+                                ul.key {
+                                    width: 120px;
+
+                                    li {
+                                        line-height: 30px;
+                                        font-weight: 500;
+                                        margin-right: 10px;
+
+                                        &.double {
+                                            margin-bottom: 30px;
+                                        }
+
+                                        &.triple {
+                                            margin-bottom: 60px;
+                                        }
+                                    }
+                                }
+
+                                ul.value {
+                                    li {
+                                        line-height: 30px;
+                                        color: #999;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
+
+                        .btns {
+                            align-self: flex-end;
+
+                            .btn {
+                                margin-top: 20px;
+                                margin-left: 10px;
+                                margin-right: 0;
+                                border: 1px solid transparent;
+                                transition: all 0.3s;
+                                &:nth-child(odd):hover {
+                                    border: solid 1px rgb(209, 209, 209);
+                                    background-color: rgb(209, 209, 209);
+                                    color: #fff;
+                                }
+                                &:nth-child(2n):hover{
+                                    background-color: #0065AF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+.ctDining {
+    .selectedInfo {
+        article {
+            &:nth-last-of-type(odd) {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .image {
+                position: relative;
+
+                .img_info {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0px;
+                    padding: 20px 20px 20px 40px;
+                    text-align: right;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border-radius: 110px 0px 0px 0px;
+                    color: #fff;
+
+                    h6 {
+                        line-height: 20px;
+                        font-size: 18px;
+                        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+                        letter-spacing: 1px;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+
+
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .contact {
+        display: none;
+    }
+    .content section.select .selectInner {
+        padding:30px;
+
+        ul {
+            li {
+                h4 {
+                    font-family: "Noto Sans KR";
+                    font-size: 1em;
+                    font-weight: 400;
+                    line-height: 50px;
+                    color: #333;
+                }
+
+                ul {
+                    //디스플레이 플렉스로 정렬하고 패딩줌
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px 0px;
+                    //
+
+                    li {
+                        line-height: 40px;
+                        padding: 0 40px;
+                        border-radius: 20px;
+                        border: solid 1px rgb(209, 209, 209);
+                        box-sizing: border-box;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                        //
+                        margin-right: 0px;
+                        width: 60%;
+                        margin-top: 10px;
+                        //
+                        &:hover {
+                            border: solid 1px rgb(209, 209, 209);
+                            background-color: rgb(209, 209, 209);
+                            color: #fff;
+                        }
+                    }
+
+                    li.on {
+                        border: solid 1px #000;
+                        background-color: #000;
+                        color: #fff;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .content section.selectedInfo {
+        padding-bottom: 80px;
+
+        .selectedInfoInner {
+            margin-top: 20px;
+            padding-bottom: 0px;
+            //이너 패딩은 30px
+            padding: 30px;
+
+
+            h4 {
+                font-family: "Noto Sans KR";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #333;
+            }
+
+            .articleWrap {
+                article {
+                    //
+                    flex-direction: column;
+                    //
+                }
+
+                .image {
+                    //
+                    width: 100%;
+                    height: 250px;
+                    display: flex;
+                    justify-content: center;
+                    //
+                    margin-right: 20px;
+                    overflow: hidden;
+
+                    img {
+                        //
+                        height: 100%;
+                        //
+                    }
+                    .img_info {
+                        display: none;
+                    }
+                }
+
+                .txtNBtns {
+                    //
+                    margin-top: 20px;
+                    width: 100%;
+                    padding: 0;
+                    //
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .txt {
+                        h5 {
+                            font-family: "Noto Sans KR";
+                            font-size: 21px;
+                            font-weight: 500;
+                            line-height: 40px;
+                            //
+                            font-size: 1.3em;
+                            line-height: 30px;
+
+                            //
+                        }
+
+                        p {
+                            margin-top: 20px;
+                        }
+
+                        .txtInfo {
+                            margin-top: 20px;
+                            display: flex;
+
+                            ul.key {
+                                display: none;
+                            }
+
+                            ul.value {
+                                li {
+                                    //
+                                    line-height: 20px;
+                                    font-size: 0.875em;
+
+                                    //
+                                    color: #999;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+
+                    .btns {
+                        align-self: flex-end;
+
+                        .btn {
+                            margin-top: 20px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .ctDining {
+        .selectedInfo {
+            article {
+                &:nth-last-of-type(odd) {
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+
+                .image {
+                    position: relative;
+
+                    .img_info {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0px;
+                        padding: 20px 20px 20px 40px;
+                        text-align: right;
+                        background-color: rgba(0, 0, 0, 0.6);
+                        border-radius: 110px 0px 0px 0px;
+                        color: #fff;
+
+                        h6 {
+                            line-height: 20px;
+                            font-size: 18px;
+                            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+                            letter-spacing: 1px;
+                            //
+                            font-size: 1.125em;
+                        }
+
+                        p {
+                            margin-top: 10px;
+                            text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+                            //
+                            font-size: 0.875em;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+}
+
+//768px fin

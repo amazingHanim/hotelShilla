@@ -1,0 +1,51 @@
+div.hdrWrap {
+  padding: 20px 0;
+}
+
+div.hdrWrap header {
+  width: 90%;
+  max-width: 1080px;
+  height: 40px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.hdrWrap header h1 {
+  position: absolute;
+  width: 40px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  line-height: 40px;
+}
+
+div.hdrWrap header .bars {
+  width: 40px;
+  line-height: 40px;
+  background-color: #333;
+}
+
+div.hdrWrap header .srch {
+  width: 40px;
+  line-height: 40px;
+  background-color: #000;
+}
+
+div.navWrap {
+  padding: 40px 0;
+  background-color: #555;
+  display: none;
+}
+
+div.navWrap .nav {
+  text-align: center;
+}
+
+div.navWrap .nav li {
+  padding: 5px 0;
+}

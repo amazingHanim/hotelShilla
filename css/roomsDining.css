@@ -1,0 +1,464 @@
+.content.ctRooms, .content.ctDining {
+  padding: 0 0 80px 0;
+}
+
+.content .selectInner,
+.content .selectedInfoInner {
+  margin-top: 40px;
+  padding: 60px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content section.select .selectInner ul li.option {
+  margin-top: 20px;
+}
+
+.content section.select .selectInner ul li.option:first-of-type {
+  margin-top: 0px;
+}
+
+.content section.select .selectInner ul li.option h4 {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #333;
+  display: block;
+  position: relative;
+  padding-left: 15px;
+}
+
+.content section.select .selectInner ul li.option h4::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 18px;
+  left: 0;
+  width: 4px;
+  height: 16px;
+  background-color: #333;
+}
+
+.content section.select .selectInner ul li.option ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content section.select .selectInner ul li.option ul li {
+  line-height: 40px;
+  padding: 0 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  border: solid 1px #d1d1d1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.content section.select .selectInner ul li.option ul li:hover {
+  border: solid 1px #d1d1d1;
+  background-color: #d1d1d1;
+  color: #fff;
+}
+
+.content section.select .selectInner ul li.option ul li.on {
+  border: solid 1px #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.content section.select .btnbox {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content section.select .btnbox .btn {
+  margin: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.content section.select .btnbox .btn:hover {
+  background-color: #0065AF;
+}
+
+.content section.selectedInfo {
+  padding-bottom: 80px;
+}
+
+.content section.selectedInfo .selectedInfoInner {
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+
+.content section.selectedInfo .selectedInfoInner h4 {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap article {
+  padding: 40px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: solid 1px #d1d1d1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap article:last-of-type {
+  border: none;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .image {
+  width: 50%;
+  height: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .i1 {
+  background-image: url("../img/dining_1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .i2 {
+  background-image: url("../img/dining_2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .i3 {
+  background-image: url("../img/dining_3.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .i4 {
+  background-image: url("../img/dining_4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .i5 {
+  background-image: url("../img/dining_5.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns {
+  padding: 0px 20px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt h5 {
+  font-family: "Noto Sans KR";
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt p {
+  margin-top: 20px;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.key {
+  width: 120px;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.key li {
+  line-height: 30px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.key li.double {
+  margin-bottom: 30px;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.key li.triple {
+  margin-bottom: 60px;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.value li {
+  line-height: 30px;
+  color: #999;
+  font-weight: 300;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .btns {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .btns .btn {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .btns .btn:nth-child(odd):hover {
+  border: solid 1px #d1d1d1;
+  background-color: #d1d1d1;
+  color: #fff;
+}
+
+.content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .btns .btn:nth-child(2n):hover {
+  background-color: #0065AF;
+}
+
+.ctDining .selectedInfo article:nth-last-of-type(odd) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.ctDining .selectedInfo article .image {
+  position: relative;
+}
+
+.ctDining .selectedInfo article .image .img_info {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  padding: 20px 20px 20px 40px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 110px 0px 0px 0px;
+  color: #fff;
+}
+
+.ctDining .selectedInfo article .image .img_info h6 {
+  line-height: 20px;
+  font-size: 18px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+.ctDining .selectedInfo article .image .img_info p {
+  margin-top: 10px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    display: none;
+  }
+  .content section.select .selectInner {
+    padding: 30px;
+  }
+  .content section.select .selectInner ul li h4 {
+    font-family: "Noto Sans KR";
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 50px;
+    color: #333;
+  }
+  .content section.select .selectInner ul li ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .content section.select .selectInner ul li ul li {
+    line-height: 40px;
+    padding: 0 40px;
+    border-radius: 20px;
+    border: solid 1px #d1d1d1;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: 0px;
+    width: 60%;
+    margin-top: 10px;
+  }
+  .content section.select .selectInner ul li ul li:hover {
+    border: solid 1px #d1d1d1;
+    background-color: #d1d1d1;
+    color: #fff;
+  }
+  .content section.select .selectInner ul li ul li.on {
+    border: solid 1px #000;
+    background-color: #000;
+    color: #fff;
+  }
+  .content section.selectedInfo {
+    padding-bottom: 80px;
+  }
+  .content section.selectedInfo .selectedInfoInner {
+    margin-top: 20px;
+    padding-bottom: 0px;
+    padding: 30px;
+  }
+  .content section.selectedInfo .selectedInfoInner h4 {
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .image {
+    width: 100%;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .image img {
+    height: 100%;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .image .img_info {
+    display: none;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt h5 {
+    font-family: "Noto Sans KR";
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.3em;
+    line-height: 30px;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt p {
+    margin-top: 20px;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.key {
+    display: none;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .txt .txtInfo ul.value li {
+    line-height: 20px;
+    font-size: 0.875em;
+    color: #999;
+    font-weight: 300;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .btns {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .content section.selectedInfo .selectedInfoInner .articleWrap .txtNBtns .btns .btn {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .ctDining .selectedInfo article:nth-last-of-type(odd) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .ctDining .selectedInfo article .image {
+    position: relative;
+  }
+  .ctDining .selectedInfo article .image .img_info {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 20px 20px 20px 40px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 110px 0px 0px 0px;
+    color: #fff;
+  }
+  .ctDining .selectedInfo article .image .img_info h6 {
+    line-height: 20px;
+    font-size: 18px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    font-size: 1.125em;
+  }
+  .ctDining .selectedInfo article .image .img_info p {
+    margin-top: 10px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+    font-size: 0.875em;
+  }
+}

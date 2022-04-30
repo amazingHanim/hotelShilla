@@ -1,0 +1,334 @@
+div.content{
+    padding: 0px;
+    header{
+        width: 100%;
+    }
+    section{
+        max-width: none;
+        width: 100%;
+        margin:0 auto;
+        padding: 0;
+        h4{
+            color: #fff;
+        }
+    }
+}
+// content 재설정
+.aboutUs {
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    
+    & > .image{
+        background-image: url(../img/aboutUs_1.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%; height: 700px;
+    }
+    main {
+        width: 40%;
+        height: 700px;
+
+        min-width: 450px;
+        background-color: #1E1E1E;
+        display: flex;
+        align-items: flex-end;
+
+        .texts {
+            color: #fff;
+            padding: 0 18.75% 80px 40px;
+
+            h3 {
+                font-size: 80px;
+                line-height: 80px;
+                font-weight: 400;
+            }
+
+            h4 {
+                font-family: 'Noto Serif', serif;
+                font-size: 28px;
+                font-weight: 300;
+                font-style: italic;
+                line-height: 40px;
+                margin-top: 20px;
+            }
+
+            p {
+                margin-top: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+// section.aboutUs
+
+div.content>.best,div.content>.awards {
+    padding: 80px 0;
+    header {
+        text-align: center;
+        h4 {
+            font-family: 'Noto Serif', serif;
+            font-size: 28px;
+            font-weight: 300;
+            font-style: italic;
+            line-height: 40px;
+            color: #000;
+        }
+
+        p {
+            margin-top: 40px;
+        }
+    }
+
+    &.best {
+        text-align: center;
+        background-color: #F2F2F2;
+        .image {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 720px;
+            }
+        }
+
+
+        .lineBtn {
+            margin-top: 20px;
+
+            a {
+                border-bottom: solid 1px #000;
+                font-size: 18px;
+                line-height: 40px;
+                transition: font-size,0.3s;
+                &:hover{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+
+    &.awards {
+        
+        section{
+            margin-top: 80px;
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+            ul.year{
+                li{ 
+                    margin-right: 60px;
+                    position: relative;
+                    line-height: 30px;
+                    margin-top: 20px;
+                    font-style: italic;
+                    font-size: 21px;
+                    color:#999;
+                    &::after{
+                        display: block;
+                        content: "";
+                        position:absolute;
+                        top:8px;right:-35px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        border: solid 1px #555;
+                        border-radius: 10px;    
+                    }
+                    &.lh2{
+                        height: 60px;
+                    }
+                    &.lh3{
+                        height: 90px;
+                    }
+                    &.lh4{
+                        height: 120px;
+                    }
+                    
+                }
+            }
+            ul.awardList{
+                position: relative;
+                &::before{
+                    display: block;
+                    content: "";
+                    position:absolute;
+                    width: 1px;height: 100%;
+                    background-color:#555;
+                    top:0;left:-31.3px;
+                    z-index: -1;
+                }
+                li{
+                    line-height: 30px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    
+    }
+}
+@media screen and (max-width:768px){
+    
+    .aboutUs {
+        padding: 0px;
+        display: block;
+
+        & > .image{
+            background-image: url(../img/aboutUs_1.jpeg);
+            background-size: cover;
+            width: 100%; height: 400px;
+        }
+
+        main {
+            width: 100%;
+            height: inherit;
+            min-width: inherit;
+            background-color: #1E1E1E;
+            display: flex;
+            align-items: flex-end;
+    
+            .texts {
+                color: #fff;
+                padding: 40px 18.75% 80px 40px;
+                //
+                padding: 40px;
+                //
+    
+                h3 {
+                    font-size: 80px;
+                    line-height: 80px;
+                    font-weight: 400;
+                }
+    
+                h4 {
+                    font-family: 'Noto Serif', serif;
+                    font-size: 28px;
+                    font-weight: 300;
+                    font-style: italic;
+                    line-height: 40px;
+                    margin-top: 20px;
+                }
+    
+                p {
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    // section.aboutUs
+    
+    div.content>.best,div.content>.awards {
+        padding: 80px 40px;
+        header {
+            text-align: center;
+            h4 {
+                font-family: 'Noto Serif', serif;
+                font-size: 28px;
+                font-weight: 300;
+                font-style: italic;
+                line-height: 40px;
+                color: #000;
+            }
+    
+            p {
+                margin-top: 40px;
+            }
+        }
+    
+        &.best {
+            text-align: center;
+            background-color: #F2F2F2;    
+            .image {
+                margin-top: 40px;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+    
+    
+            .lineBtn {
+                margin-top: 20px;
+    
+                a {
+                    border-bottom: solid 1px #000;
+                    font-size: 18px;
+                    line-height: 40px;
+                    transition: font-size,0.3s;
+                    &:hover{
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    
+        &.awards {
+            
+            section{
+                margin-top: 80px;
+                width: 90%;
+                max-width: 1200px;
+                display: flex;
+                justify-content: center;
+                ul.year{
+                    li{ 
+                        margin-right: 60px;
+                        position: relative;
+                        line-height: 30px;
+                        margin-top: 20px;
+                        font-style: italic;
+                        font-size: 21px;
+                        color:#999;
+                        &::after{
+                            display: block;
+                            content: "";
+                            position:absolute;
+                            top:8px;right:-35px;
+                            width: 10px;
+                            height: 10px;
+                            background-color: #fff;
+                            border: solid 1px #555;
+                            border-radius: 10px;    
+                        }
+                        &.lh2{
+                            height: 60px;
+                        }
+                        &.lh3{
+                            height: 90px;
+                        }
+                        &.lh4{
+                            height: 120px;
+                        }
+                        
+                    }
+                }
+                ul.awardList{
+                    position: relative;
+                    &::before{
+                        display: block;
+                        content: "";
+                        position:absolute;
+                        width: 1px;height: 100%;
+                        background-color:#555;
+                        top:0;left:-31.3px;
+                        z-index: -1;
+                    }
+                    li{
+                        line-height: 30px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        
+        }
+    }
+
+
+    // section{
+    //     padding: 0 40px;
+    // }
+
+}//768px

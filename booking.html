@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shilla - Booking</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common.mediaQuery.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/booking.js"></script>
+</head>
+
+<body>
+    <div class="hdrWrap">
+        <header>
+            <h1><a href="index.html">
+                <img class="mainH" src="img/header.logo.svg" alt="The Shilla Hotels & Resorts">
+                <img class="fixedH" src="img/header.fixed.logo.svg" alt="The Shilla" style="display: none">
+            </a></h1>
+            <div class="bars">
+                <button>
+                    <img class="mainH" src="img/mainM.svg" alt="메뉴">
+                    <img class="fixedH" src="img/fixedM.svg" alt="메뉴" style="display: none;">
+                </button>
+            </div>
+            <div class="menu">
+                <div class="ovgrid">
+                    <menu>
+                        <li>로그인</li>
+                        <li>신라리워즈 가입</li>
+                        <li>예약확인 <i class="fas fa-angle-down"></i></li>
+                        <li>한국어 <i class="fas fa-angle-down"></i></li>
+                    </menu>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- //hdrWrap -->
+
+    <div class="location">
+        <p>
+            <span><a href="#a"><i class="fas fa-home"></i></a></span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Booking
+        </p>
+    </div>
+    <!-- //location -->
+
+    <div class="content ctBooking">
+        <header>
+            <h3>Booking</h3>
+            <p>호텔신라에서 선보이는 감각적인 인테리어와 차별화된 가치로 새로운 라이프스타일 트렌드를 경험해 보세요.</p>
+        </header>
+        <section class="select">
+            <header>
+                <p> <span>Step 01.</span> 호텔, 날짜, 인원 선택하기</p>
+                <ol class="stepImg">
+                    <li class="on"><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                </ol>
+            </header>
+            <article class="selectBox">
+                <ul class="selectOptions">
+                    <li class="se select1">
+                        <ul>
+                            <li>호텔 또는 도시<div class="circle"><span>+1</span></div></li>
+                            <li><a href=""><span>서울신라호텔</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="se select2">
+                        <ul>
+                            <li>체크인</li>
+                            <li><input type="date"></li>
+                        </ul>
+                        <div class="circle">
+                            <span>1박</span>
+                        </div>
+                        <ul>
+                            <li>체크아웃</li>
+                            <li><input type="date"></li>
+                        </ul>
+                    </li>
+                    <li class="select3">
+                        <ul>
+                            <li>객실</li>
+                            <li><input type="number" min="1" placeholder="1"></li>
+                        </ul>
+                        <ul>
+                            <li>성인</li>
+                            <li><input type="number" min="1" placeholder="1"></li>
+                        </ul>
+                        <ul>
+                            <li>어린이 <i class="fas fa-info-circle"></i></li>
+                            <li><input type="number" min="0" placeholder="0"></li>
+                        </ul>
+                        <ul>
+                            <li>유아 <i class="fas fa-info-circle"></i></li>
+                            <li><input type="number" min="0" placeholder="0"></li>
+                        </ul>
+                    </li>
+                    <li class="searchIcon"></li>
+                </ul>
+            </article>
+            <!-- //selectBox -->
+        </section>
+        <section class="selectedInfo">
+            <div class="tabBar">
+                <div class="tb on">서울신라호텔</div>
+                <div class="tb">신라스테이 광화문</div>
+            </div>
+            <!-- //tabBar -->
+            <div class="tabContent">
+                <!-- tabContent tc1 start -->
+                <div class="tc on">
+                    <div class="filter">
+                        <div class="fil_1">
+                            <h4 class="on"><a href="#a">회원전용(6)</a></h4>
+                            <h4><a href="#a">패키지(10)</a></h4>
+                            <h4><a href="#a">객실(4)</a></h4>
+                        </div>
+                        <div class="fil_2 btns">
+                            <button>키워드 <i class="fas fa-angle-up up"></i><i class="fas fa-angle-down down" style="display:none;"></i></button>
+                            <select name="가격정렬">
+                                <option value="낮은 가격순">낮은 가격순</option>
+                                <option value="높은 가격순">높은 가격순</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- //filter -->
+
+                    <div class="keyword">
+                        <div class="keyContent">
+                            <header>
+                                <h4>키워드 검색</h4>
+                                <span class="renew">
+                                    <i class="fas fa-sync-alt"></i>선택해제
+                                </span>
+                            </header>
+                            <section>
+                                <ul>
+                                    <li class="on">야외수영장</li>
+                                    <li>조식</li>
+                                    <li>와이너리</li>
+                                    <li>스파</li>
+                                    <li>라운지 혜택</li>
+                                    <li>룸서비스</li>
+                                    <li>엑스트라 베드</li>
+                                </ul>
+                                <div class="btns">
+                                    <button class="blackBtn">적용</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //keyword -->
+                    <div class="alert">
+                        <p>*할인이 적용된 상품입니다.</p>
+                        <p>객실예약 연락처 : 02-2230-3310 <span>문의하기</span></p>
+                    </div>
+                    <!-- //alert -->
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i1"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards In Room Art</h3>
+                                    <p class="price"><span>340,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down" style="display:none;"></i>
+                                        <i class="fas fa-angle-up up"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i2"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards Fall in art 1</h3>
+                                    <p class="price"><span>340,000~</span> /1박</p>
+                                </div>
+                                <p class="content">
+                                    리워즈 1만P + '마이팔레트' 튜토리얼 영상 + '마이팔레트' 아트 키트 + '마이팔레트' 프리미엄 클래스 할인권 2매 + 신라 베어 1개 + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장)
+                                </p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i3"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards Give Your Bigwalk</h3>
+                                    <p class="price"><span>360,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 + 한양도성
+                                    스팀케이크 + 신라 에코백 미니 + 소인 투숙시, 신라 베어 + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i4"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards Play With PXG</h3>
+                                    <p class="price"><span>380,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 + 한양도성
+                                    스팀케이크 + 신라 에코백 미니 + 소인 투숙시, 신라 베어 + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i5"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards In Room Delights</h3>
+                                    <p class="price"><span>390,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 룸 서비스 디너 세트 1개 + 레드 와인 1병</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i6"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards In Room Opera</h3>
+                                    <p class="price"><span>430,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 인 룸 오페라 영상(5종) + CGV 관람권 2매 + F&B Credit 10만원</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- //art -->
+                </div>
+                <!-- //tabContent tc1 -->
+
+                <!-- tabContent tc2 start -->
+                <div class="tc">
+                    <div class="filter">
+                        <div class="fil_1">
+                            <h4 class="on"><a href="#a">회원전용(4)</a></h4>
+                            <h4><a href="#a">패키지(10)</a></h4>
+                            <h4><a href="#a">객실(4)</a></h4>
+                        </div>
+                        <div class="fil_2 btns">
+                            <button>키워드 <i class="fas fa-angle-up up"></i><i class="fas fa-angle-down down" style="display:none;"></i></button>
+                            <select name="가격정렬">
+                                <option value="낮은 가격순">낮은 가격순</option>
+                                <option value="높은 가격순">높은 가격순</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- //filter -->
+
+                    <div class="keyword">
+                        <div class="keyContent">
+                            <header>
+                                <h4>키워드 검색</h4>
+                                <span class="renew">
+                                    <i class="fas fa-sync-alt"></i>선택해제
+                                </span>
+                            </header>
+                            <section>
+                                <ul>
+                                    <li class="on">야외수영장</li>
+                                    <li>조식</li>
+                                    <li>와이너리</li>
+                                    <li>스파</li>
+                                    <li>라운지 혜택</li>
+                                    <li>룸서비스</li>
+                                    <li>엑스트라 베드</li>
+                                </ul>
+                                <div class="btns">
+                                    <button class="blackBtn">적용</button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!-- //keyword -->
+
+                    <div class="alert">
+                        <p>*할인이 적용된 상품입니다.</p>
+                        <p>객실예약 연락처 : 02-2230-3310 <span>문의하기</span></p>
+                    </div>
+                    <!-- //alert -->
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i3"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards Give Your Bigwalk</h3>
+                                    <p class="price"><span>360,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 + 한양도성
+                                    스팀케이크 + 신라 에코백 미니 + 소인 투숙시, 신라 베어 + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down" style="display:none;"></i>
+                                        <i class="fas fa-angle-up up"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i4"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards Play With PXG</h3>
+                                    <p class="price"><span>380,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 + 한양도성
+                                    스팀케이크 + 신라 에코백 미니 + 소인 투숙시, 신라 베어 + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i5"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards In Room Delights</h3>
+                                    <p class="price"><span>390,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 룸 서비스 디너 세트 1개 + 레드 와인 1병</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="art">
+                        <div class="info">
+                            <div class="image i6"></div>
+                            <div class="texts">
+                                <div class="top">
+                                    <h3>Rewards In Room Opera</h3>
+                                    <p class="price"><span>430,000~</span> /1박</p>
+                                </div>
+                                <p class="content">리워즈 1만P + 인 룸 오페라 영상(5종) + CGV 관람권 2매 + F&B Credit 10만원</p>
+                                <div class="btns">
+                                    <div class="benefit">
+                                        <span>혜택 및 이용안내 <i class="fas fa-plus-circle"></i></span>
+                                        
+                                    </div>
+                                    <button class="blackBtn">예약하기 <i class="fas fa-angle-down down"></i>
+                                        <i class="fas fa-angle-up up" style="display:none;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="room">
+                                <h5>[Standard] Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Business Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/twinBed.svg" alt="트윈베드아이콘"><span>Twin</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <p class="another">다른날짜요금 <i class="fas fa-angle-right"></i></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="room">
+                                <h5>[Standard] Grand Corner Deluxe</h5>
+                                <ul class="selectRoom">
+                                    <li>
+                                        <div class="leftS">
+                                            <label><input type="radio" name="bedding"><img src="img/doubleBed.svg" alt="더블베드아이콘"><span>Double</span></label>
+                                            <span class="add">비교함 담기</span>
+                                        </div>
+                                        <div class="rightS">
+                                            <p class="price">470,000 원</p>
+                                            <div class="another">다른날짜요금 <i class="fas fa-angle-right"></i></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- //art -->
+                </div>
+                <!-- //tabContent tc2 -->
+            </div>
+        </section>
+    </div>
+
+    <div class="ftrWrap">
+        <nav>
+            <ul>
+                <li>The Shilla Hotels & Resorts</li>
+                <li class="vb">|</li>
+                <li>The Shilla</li>
+                <li class="vb">|</li>
+                <li>Shilla Monogram</li>
+                <li class="vb">|</li>
+                <li>Shilla Stay</li>
+            </ul>
+            <ul>
+                <li>ENGLISH</li>
+                <li class="vb">|</li>
+                <li>日本語</li>
+                <li class="vb">|</li>
+                <li>中文語</li>
+            </ul>
+        </nav>
+        <footer>
+            <ul>
+                <li>(주)Lorem ipsum dolor sit amet 605-602, (zip, 383911) 사업자등록번호 1002-331-583129</li>
+                <li>Consectetur adipiscing elit. Donec ac sapien ultricies, ultrices mi vel, porttitor sem.</li>
+                <li>All rights reserved. Design by YourName</li>
+            </ul>
+            <div class="btn"><button>Customer service center 1233-4567</button></div>
+        </footer>
+    </div>
+    <!-- //footer -->
+
+    <div class="gnbWrap">
+        <div class="gnbHdr">
+            <nav class="gnb">
+                <div class="btn"></div>
+                <ul class="lnb">
+                    <li>로그인</li>
+                    <li>리워즈가입</li>
+                    <li>예약확인</li>
+                </ul>
+                <ul class="nav">
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="#a">Magazine</a></li>
+                    <li><a href="#a">Contact</a></li>
+                </ul>
+                <menu>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </menu>
+            </nav> 
+        </div>
+        <div class="gnbImg">
+            <div class="imgGroup">
+                <div class="image i1">
+                    <div class="about">
+                        <a href="aboutUs.html">
+                            <img src="img/gnb.menu1.img1.png" alt="호텔신라">
+                            <h5>About Shilla&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="branches">
+                        <img src="img/gnb.menu1.img2.png" alt="더신라, 신라모노그램, 신라스테이 브랜드 로고">
+                        <h5>Branches&nbsp;</h5>
+                    </div>
+                </div>
+                <div class="image i2">
+                    <div class="theShilla">
+                        <a href="rooms.html">
+                            <img src="img/gnb.menu2.img1.png" alt="The Shilla">
+                            <h5>The Shilla&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="monogram">
+                        <img src="img/gnb.menu2.img2.png" alt="Shilla Monogram">
+                        <h5>Shilla Monogram&nbsp;</h5>
+                    </div>
+                    <div class="shillaStay">
+                        <img src="img/gnb.menu2.img3.png" alt="Shilla Stay">
+                        <h5>Shilla Stay</h5>
+                    </div>
+                </div>
+                <div class="image i3">
+                    <div class="diningSeoul">
+                        <img src="img/gnb.menu3.img1.png" alt="더신라서울 다이닝">
+                        <h5>The Shilla Seoul&nbsp;</h5>
+                    </div>
+                    <div class="diningJeju">
+                        <img src="img/gnb.menu3.img2.png" alt="더신라제주 다이닝">
+                        <h5>The Shilla Jeju&nbsp;</h5>
+                    </div>
+                    <div class="diningStay">
+                        <img src="img/gnb.menu3.img3.png" alt="신라스테이 다이닝">
+                        <h5>Shilla Stay&nbsp;</h5>
+                    </div>
+                </div>
+                <div class="image i4">
+                    <div class="package">
+                        <a href="offers.html">
+                            <img src="img/gnb.menu4.img1.png" alt="패키지 상품">
+                            <h5>Offers&nbsp;</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="image i5">
+                    <div class="hotelBooking">
+                        <a href="booking.html">
+                            <img src="img/gnb.menu5.img1.png" alt="호텔 예약">
+                            <h5>Hotel&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="diningBooking">
+                        <img src="img/gnb.menu5.img2.png" alt="다이닝 예약">
+                        <h5>Dining&nbsp;</h5>
+                    </div>
+                </div>
+                <div class="image i6">
+                    <div class="magazine">
+                        <img src="img/gnb.menu6.img1.png" alt="메거진">
+                        <h5>Magazine</h5>
+                    </div>
+                </div>
+                <div class="image i7">
+                    <form>
+                        <div class="dForm"> 
+                            <h6>구분</h6>
+                            <label><input type="radio" name="bedding" name="distinction" id="distinct"> 신라리워즈</label>
+                            <label><input type="radio" name="bedding" name="distinction" id="distinct"> 신라호텔</label>
+                            <label><input type="radio" name="bedding" name="distinction" id="distinct"> 신라모노그램</label>
+                            <label><input type="radio" name="bedding" name="distinction" id="distinct"> 신라스테이</label>
+                            <label><input type="radio" name="bedding" name="distinction" id="distinct"> 호텔개발</label>
+                        </div>
+                        <div class="qForm">
+                            <h6>질문유형</h6>
+                            <select name="" id="qFrom">
+                                <option value="">선택</option>
+                                <option value="">신라리워즈가입</option>
+                                <option value="">포인트적립/사용</option>
+                                <option value="">포인트조정</option>
+                                <option value="">기타</option>
+                            </select>
+                        </div>
+                        <div class="userName">
+                            <h6>성명</h6>
+                            <input type="text">
+                        </div>
+                        <div class="cTitle">
+                            <h6>제목</h6>
+                            <input type="text">
+                        </div>
+                        <div class="cContent">
+                            <h6>내용</h6>
+                            <input type="text">
+                        </div>
+                        <div class="emailForm">
+                            <h6>이메일</h6>
+                            <input type="text">
+                        </div>
+                        <div class="phoneForm">
+                            <h6>휴대전화</h6>
+                            <input type="text">
+                        </div>
+                        <div class="prevent">
+                            <h6>자동입력방지</h6>
+                            <input type="text" placeholder="우측에 보이는 문자를 그대로 입력하세요">
+                            <img src="img/prevent.png" alt="">
+                        </div>
+                        <div class="agree">
+                            <label><input type="checkbox" name="agree1" id="agree1">&nbsp;필수적 개인정보 수집 및 이용에 대한 동의</label>
+                        </div>
+                        <div class="agree">
+                            <label><input type="checkbox" name="agree2" id="agree2">&nbsp;선택적 개인정보 수집 및 이용에 대한 동의</label>
+                            <button>보내기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- //gnb -->
+</body>
+
+</html>

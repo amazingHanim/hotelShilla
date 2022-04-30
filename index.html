@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- open graph -->
+    <title>The Shilla Hotels & Resorts - 더 신라 호텔 앤 리조트</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common.mediaQuery.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.mediaQuery.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.main.js"></script>
+    <script src="js/index.ct1.js"></script>
+    <script src="js/index.ct2.js"></script>
+    <script src="js/index.ct4.js"></script>
+    <script src="js/index.ct5.js"></script>
+</head>
+
+<body>
+    <div class="hdrWrap">
+        <header>
+            <h1><a href="index.html">
+                <img class="mainH" src="img/header.logo.svg" alt="The Shilla Hotels & Resorts">
+                <img class="fixedH" src="img/header.fixed.logo.svg" alt="The Shilla" style="display: none">
+            </a></h1>
+            <div class="bars">
+                <button>
+                    <img class="mainH" src="img/mainM.svg" alt="메뉴">
+                    <img class="fixedH" src="img/fixedM.svg" alt="메뉴" style="display: none;">
+                </button>
+            </div>
+            <div class="menu">
+                <div class="ovgrid">
+                    <menu>
+                        <li>로그인</li>
+                        <li>신라리워즈 가입</li>
+                        <li>예약확인 <i class="fas fa-angle-down"></i></li>
+                        <li>한국어 <i class="fas fa-angle-down"></i></li>
+                    </menu>
+                </div>
+            </div>
+        </header>
+    </div>
+<!-- //hdrWrap -->
+
+    <div class="mnWrap">
+        <main>
+            <header>
+                <div class="texts">
+                    <div class="text t1 currentTxt">
+                        <h5>1/4</h5>
+                        <h2>Fall in art</h2>
+                        <p>
+                            서울신라호텔이 아트앤가이드와 함께<br>
+                            <br>
+                            전세계적으로 사랑받는 박서보 화백의 작품을 공동으로<br>
+                            소유할 수 있는 기회를 제공합니다.<br>
+                            <br>
+                            단순한 휴식의 개념에서 한층 더 나아간<br>
+                            특별한 호캉스를 즐겨보세요.<br>
+                        </p>
+                    </div>
+                    <div class="text t2">
+                        <h5>2/4</h5>
+                        <h2>Teaism</h2>
+                        <p>
+                            하동에서 수확한 유기농 말차를<br>
+                            전문가의 손길로 우려내어 정성껏 내어드립니다.<br>
+                            <br>
+                            조용한 객실에서 차의 향기를 느껴보세요.<br>
+                            평온의 조각들을 찻잔에 담았습니다.<br>
+                            <br>
+                            마음에 담아가세요.<br>
+                        </p>
+                    </div>
+                    <div class="text t3">
+                        <h5>3/4</h5>
+                        <h2>休息</h2>
+                        <p>
+                            땅의 기후에 맞는 꽃과 나무, 열매에서 추출한 <br>
+                            휴식의 향으로 일상의 피로에서 멀어집니다.<br>
+                            <br>
+                            제주신라호텔의 아늑한 침구와 함께<br>
+                            베르가못, 스위트 오렌지의 느긋한 향을 즐기실 수 있습니다.<br>
+                            <br>
+                            제주신라호텔만의 특별한 아로마 호캉스를 즐겨보세요.<br>
+                        </p>
+                    </div>
+                    <div class="text t4">
+                        <h5>4/4</h5>
+                        <h2>Gourmet</h2>
+                        <p>
+                            겨울 추위에 잠시 잠들었던 미각을 깨우는<br>
+                            미식 결합 패키지를 소개합니다.<br>
+                            <br>
+                            객실에서 편안하게 즐기는 룸서비스 디너로 <br>
+                            여유 가득한 하루를 즐겨보세요.<br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="pagenation">
+                        <span class="clicked"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="shortcut">
+                        <div class="ovgrid"></div>
+                        <div class="menu">
+                            <div class="dummy"></div>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>호텔 또는 도시</li>
+                                        <li><a href=""><span>호텔을 선택해주세요</span></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>체크인</li>
+                                        <li><input type="date"></li>
+                                    </ul>
+                                    <ul>
+                                        <li>체크아웃</li>
+                                        <li><input type="date"></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>객실</li>
+                                        <li><input type="number" min="1" placeholder="1"></li>
+                                    </ul>
+                                    <ul>
+                                        <li>성인</li>
+                                        <li><input type="number" min="1" placeholder="1"></li>
+                                    </ul>
+                                    <ul>
+                                        <li>어린이</li>
+                                        <li><input type="number" min="0" placeholder="0"></li>
+                                    </ul>
+                                    <ul>
+                                        <li>유아</li>
+                                        <li><input type="number" min="0" placeholder="0"></li>
+                                    </ul>
+                                </li>
+                                <li class="searchIcon"></li>
+                            </ul>
+                            <div class="btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="imgGroup">
+                    <div class="image i1"></div>
+                    <div class="image i2"></div>
+                    <div class="image i3"></div>
+                    <div class="image i4"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+<!-- //mnWrap -->
+
+    <div class="booking">
+        <div class="selectHotel">
+            <ul>
+                <li>호텔 또는 도시</li>
+                <li><a href=""><span>호텔을 선택해주세요</span></a></li>
+            </ul>
+        </div>
+
+        <div class="checkInOut">
+            <ul>
+                <li>체크인</li>
+                <li><input type="date"></li>
+            </ul>
+            <ul>
+                <li>체크아웃</li>
+                <li><input type="date"></li>
+            </ul>
+        </div>
+
+        <div class="numberOfGuest">
+            <ul>
+                <li>객실</li>
+                <li><input type="number" min="1" placeholder="1"></li>
+            </ul>
+            <ul>
+                <li>성인</li>
+                <li><input type="number" min="1" placeholder="1"></li>
+            </ul>
+            <ul>
+                <li>어린이</li>
+                <li><input type="number" min="0" placeholder="0"></li>
+            </ul>
+            <ul>
+                <li>유아</li>
+                <li><input type="number" min="0" placeholder="0"></li>
+            </ul>
+        </div>
+
+        <div class="btns">
+            <button class="blackBtn">예약하기</button>
+        </div>
+    </div>
+<!-- //booking -->
+
+    <div class="content bnr">
+        <section>
+            <div class="bGroup">
+                <button>#룸아트</button>
+                <button>#호캉스</button>
+                <button><b>#폴인아트</b></button>
+                <button>#가족여행</button>
+                <button>#웰니스</button>
+                <button>#제주신라호텔</button>
+                <button><b>#룸오페라</b></button>
+                <button>#기념일</button>
+                <button>#키즈</button>
+                <button>#다낭</button>
+                <button><b>#실내캠핑</b></button>
+                <button>#디너</button>
+                <button>#와이너리</button>
+                <button><b>#야외수영장</b></button>
+                <button>#홀리데이</button>
+                <button>#커플</button>
+                <button>#한달살기</button>
+                <button>#펫캉스</button>
+            </div>
+        </section>
+    </div>
+<!-- //bnr -->
+
+    <div class="content ct1">
+        <header>
+            <h3>Go to offers</h3>
+            <div class="btns more">
+                View more
+            </div>
+            <p>
+                신라호텔에서 제공하는 다양한 혜택을 확인해보세요.
+            </p>
+        </header>
+
+        <section>
+            <div class="ovgrid">
+                <div class="artgroup">
+                    <article class="i1">
+                        <div class="texts">
+                            <h4>In Room Art<br>&nbsp;</h4>
+                            <h5>서울신라호텔</h5>
+                            <h6>기간 2021.12.01 ~ 2021.12.30<br>&nbsp;</h6>
+                            <p>
+                                서울신라호텔에서의 특별한 하루를 <br>
+                                나만의 작품으로 담아보세요.<br>
+                                &nbsp;<br>
+                                아름다운 색으로 빛나는 <br>
+                                추억을 선사합니다.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i2">
+                        <div class="texts">
+                            <h4>Private Kids Playroom<br>
+                                – Afternoon</h4>
+                            <h5>제주신라호텔</h5>
+                            <h6>기간 2021.12.01 ~ 2021.12.30</h6>
+                            <p>
+                                스위트 룸에 마련된 우리 아이만의 <br>
+                                아늑하고 편안한 놀이 공간.<br>
+                                &nbsp;<br>
+                                아이와 함께하는 소중한 시간을 <br>
+                                안전하고 여유롭게 즐겨보세요.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i3">
+                        <div class="texts">
+                            <h4>Experience<br>
+                                Shilla Stay</h4>
+                            <h5>신라스테이</h5>
+                            <h6>기간 2021.11.01 ~ 2021.12.31<br>&nbsp;</h6>
+                            <p>
+                                &nbsp;<br>
+                                &nbsp;<br>
+                                &nbsp;<br>
+                                신라스테이에 처음 투숙하는 회원을 위한 
+                                특별한 상품을 제안합니다.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i4">
+                        <div class="texts">
+                            <h4>Memorable<br>
+                                Honeymoon</h4>
+                            <h5>제주신라호텔</h5>
+                            <h6>기간 2021.12.01 ~ 2022.01.31<br>&nbsp;</h6>
+                            <p>
+                                &nbsp;<br>
+                                &nbsp;<br>
+                                오직 허니문에서만 경험할 수 있는<br>
+                                로맨틱한 감동과 아름다운 여행을<br>
+                                제주신라호텔에서 만나보세요.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i5">
+                        <div class="texts">
+                            <h4>Celebration<br>
+                                Moment</h4>
+                            <h5>서울신라호텔</h5>
+                            <h6>기간 2021.12.01 ~ 2021.12.30<br>&nbsp;</h6>
+                            <p>
+                                꿈 같은 기념일을 선사할 <br>
+                                서울신라호텔에서의 하루<br>
+                                &nbsp;<br>
+                                샴페인과 케이크로 오래도록 기억될 <br>
+                                둘만의 추억을 만들어보세요.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i6">
+                        <div class="texts">
+                            <h4>Shilla<br>Green Stay</h4>
+                            <h5>신라스테이</h5>
+                            <h6>기간 2021.12.01 ~ 2021.12.30<br>&nbsp;</h6>
+                            <p>
+                                <br>
+                                <br>
+                                나와 지구를 지키기 위한 발걸음,<br>
+                                신라스테이와 함께&nbsp;<br>
+                                그린 스테이 해보세요.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i7">
+                        <div class="texts">
+                            <h4>Shilla Stay<br>
+                                Eco Plan</h4>
+                            <h5>신라스테이</h5>
+                            <h6>기간 2022.01.01 ~ 2022.06.30<br>&nbsp;</h6>
+                            <p>
+                                따뜻한 배려로 자원을 보호하는 <br>
+                                신라스테이 에코 플랜입니다.<br>
+                                객실정비를 최소화하여 <br>
+                                환경을 생각하는 동시에<br>
+                                할인 혜택도 받으실 수 있습니다.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="i8">
+                        <div class="texts">
+                            <h4>Pet's Vacation<br>&nbsp;</h4>
+                            <h5>서울신라호텔</h5>
+                            <h6>기간 2021.12.01 ~ 2021.12.30<br>&nbsp;</h6>
+                            <p>
+                                <br>
+                                잠시 떨어져 있는 시간도&nbsp;<br>
+                                행복할 수 있도록, <br>
+                                서로에게 여유로운 휴식을&nbsp;<br>
+                                선물하세요.<br>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- //ct1 -->
+
+    <div class="content ct2">
+        <section>
+            <header>
+                <h3>Explo<br>
+                    -ring<br>
+                    Shilla</h3>
+                <h3>Exploring Shilla</h3>
+                <div class="btns">
+                    <button class="btPrev"></button>
+                    <button class="btNext"></button>
+                </div>
+            </header>
+
+            <div class="artview">
+                <div class="artgroup">
+                    <article class="i1 selected">
+                        <div class="topText">
+                            <h6>01.<br>
+                                &nbsp;Urban<br>
+                                &nbsp;Lifestyle<br>
+                                &nbsp;Hotel
+                            </h6>
+                        </div>
+                        <div class="texts">
+                            <h4>The Shilla Seoul</h4>
+                            <h5>View details +</h5>
+                        </div>
+                    </article>
+
+                    <article class="i2">
+                        <div class="topText">
+                            <h6>02.<br>
+                                &nbsp;An<br>
+                                &nbsp;Exclusive<br>
+                                &nbsp;Gateway
+                            </h6>
+                        </div>
+                        <div class="texts">
+                            <h4>The Shilla Jeju</h4>
+                            <h5>View details +</h5>
+                        </div>
+                    </article>
+
+                    <article class="i3">
+                        <div class="topText">
+                            <h6>03. <br>
+                                &nbsp;Signature<br>
+                                &nbsp;Sophistication
+                            </h6>
+                        </div>
+                        <div class="texts">
+                            <h4>Shilla Monogram</h4>
+                            <h5>View details +</h5>
+                        </div>
+                    </article>
+
+                    <article class="i4">
+                        <div class="topText">
+                            <h6>04.<br>
+                                &nbsp;Smarter<br>
+                                &nbsp;Stay
+                            </h6>
+                        </div>
+                        <div class="texts">
+                            <h4>Shilla Stay</h4>
+                            <h5>View details +</h5>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- //ct2 -->
+
+    <div class="content ct3">
+        <header>
+            <h3>Shilla Rewards</h3>
+            <p>
+                신라리워즈는 서울·제주신라호텔, 신라모노그램, 신라스테이 및 제휴 호텔에서 포인트 혜택 및 특전을 제공하는 통합 멤버십 서비스입니다.<br>
+                지금 가입하시고 회원만을 위한 특별한 서비스와 다양한 혜택을 받으십시오.
+            </p>
+            <menu>
+                <button>신라리워즈 전용상품</button>
+                <button>신라리워즈 특전</button>
+                <button>신라리워즈 포인트</button>
+                <button class="btnBlack">신라 리워즈 가입하기</button>
+                <button class="btnBlue">View details +</button>
+            </menu>
+        </header>
+    </div>
+<!-- //ct3 -->
+
+    <div class="content ct4">
+        <header>
+            <h3>Dining</h3>
+            <p>
+                새로워진 온라인 예약으로 빠르고 간편하게 예약 및 조회해보세요. 
+            </p>
+            <menu>
+                <button class="btnBlack">다이닝 예약 바로가기</button>
+            </menu>
+        </header>
+
+        <section>
+            <div class="imgView">
+                <div class="image i1">
+                    <div class="text">
+                        <h4>LA YEON</h4>
+                        <div class="btns more">
+                            View more
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image i2">
+                    <div class="text">
+                        <h4>A R I K E</h4>
+                        <div class="btns more">
+                            View more
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image i3">
+                    <div class="text">
+                        <h4>P A L S U N</h4>
+                        <div class="btns more">
+                            View more
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image i4">
+                    <div class="text">
+                        <h4>Continental</h4>
+                        <div class="btns more">
+                            View more
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artgroup">
+                <article>
+                    <div class="texts">
+                        <h4>LA YEON</h4>
+                        <p>Korean Restaurant</p>
+                    </div>    
+                </article>
+
+                <article>
+                    <div class="texts">
+                        <h4>A R I K E</h4>
+                        <p>Japanese Restaurant</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="texts">
+                        <h4>P A L S U N</h4>
+                        <p>Chinese Restaurant</p>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="texts">
+                        <h4>CONTINENTAL</h4>
+                        <p>French Restaurant</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+<!-- //ct4 -->
+
+    <div class="content ct5">
+        <header>
+            <h3>Trip to Shilla</h3>
+            <p>
+                신라호텔의 최신 소식을 빠르게 확인할 수 있는 더 신라 호텔 & 리조트 메거진 입니다.
+            </p>
+        </header>
+
+        <section>
+            <article class="imgInfo">
+                <div class="textGroup">
+                    <div class="texts">
+                        <h4>더신라서울의<br>
+                            낭만적인 남산 전경이 보이는<br>
+                            Indoor Swimming Pool</h4>
+                        <p>
+                            더신라서울에서만 만날 수 있는 실내 수영장이 있습니다. 유리돔을 통해 보이는 남산의 전경을 만끽하며 즐기는 낭만적인 수영과 휴식. 길이 25m, 너비 6m의 풀과 함께 건식 사우나와 실내 및 야외 자쿠지를…
+                        </p>
+                    </div>
+                    <div class="texts">
+                        <h4>하동 녹차와 <br>
+                            호텔신라가 함께하는<br>
+                            평화로운 시간</h4>
+                        <p>하동에서 수확한 유기농 말차를 전문가의 손길로 우려내어 정성껏 내어드립니다. 조용한 객실에서 차의 향기를 느껴보세요. 평온의 조각들을 찻잔에 담았습니다. 하동 녹차와 함께하는 신라호텔에서의 포근한 밤…</p>
+                    </div>
+                    <div class="texts">
+                        <h4>더 신라 서울&제주 <br>
+                            룸서비스 모바일 예약<br>
+                            시스템 오픈</h4>
+                        <p>더 신라 서울과 더 신라 제주에서 그동안 직접 예약해서 기다려야만 했던 룸서비스 시스템을 개선하였습니다. 모바일 앱 신라호텔 어플을 사용하여 미리 원하는 시간대에 룸서비스를 예약할 수 있습니다. 오픈 이벤…</p>
+                    </div>
+                    <div class="texts">
+                        <h4>다낭의 아름다움을<br>
+                            느낄 수 있는<br>
+                            <span>다낭 신라 모노그램</span></h4>
+                        <p>Signiture Sophistication. 신라 모노그램은 THE SHILLA 브랜드의 시그니쳐 요소와 로컬 라이프스타일이 어우러져 차별화된 경험을 제공하는 호텔 브랜드입니다. 엄선하고 재해석한 로컬 라이프스타일은…</p>
+                    </div>
+                    <div class="texts">
+                        <h4>박서보의 묘법 시리즈<br>
+                            No. 071218, No.111020와<br>
+                            함께하는 호텔신라</h4>
+                        <p>서울신라호텔이 아트앤가이드와 함께 전세계적으로 사랑받는 박서보 화백의 작품을 공동으로 소유할 수 있는 기회를 제공합니다. 단순한 휴식의 개념에서 한층 더 나아간 특별한 호캉스를 즐겨보세요. 신라리워즈…</p>
+                    </div>
+                    <div class="texts">
+                        <h4>그린스테이<br>
+                            with 신라스테이<br>
+                            지구를 위한 한 발자국</h4>
+                        <p>나와 지구를 지키기 위한 발걸음, 신라스테이와 함께 그린 스테이 해보세요. 객실 내 비치된 각종 어매니티를 모두 친환경적인 제품으로 준비해드립니다. 지구를 위한 착한 스테이를 신라스테이와 함께 만들어…</p>
+                    </div>
+                    <div class="texts">
+                        <h4>호텔신라 x 삼성전자<br>
+                            <span>더 프리스타일 투고</span><br>
+                            프로모션</h4>
+                        <p>3월 31일 까지 진행되는 신라스테이와 삼성전자의 콜라보, 더프리스타일 투고 프로모션을 만나보세요. 언제 어디서든, 어떤 콘텐츠든 자유롭게 즐길 수 있는 삼성 '더 프리스타일'로 객실 내 프라이빗 시네마를 경험…</p>
+                    </div>
+                    <div class="texts">
+                        <h4>한국 전통의 미와 <br>
+                            현대적 감각이 어우러진<br>
+                            공간 : <span>영빈관</span></h4>
+                        <p>1976년 준공 된 영빈관은 국가적인 손님을 영접하기 위해 설립되었습니다. 1973년에 삼성그룹이 인수한 후 서울신라호텔과 함께 일반에 공개되어 격조 높은 회의와 연회를 위한 장소로 사용되고 있습니다. 서울신…</p>
+                    </div>
+                </div>
+                <div class="btnGroup">
+                    <button class="more">View more</button>
+                    <div class="btns">
+                        <button class="btnPrev"><img src="img/btPrev.svg" alt="이전버튼"></button>
+                        <button class="btnNext"><img src="img/btNext.svg" alt="다음버튼"></button>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="imgWrap">
+                <div class="ovgrid">
+                    <div class="imgGroup">
+                        <div class="image i8"></div>
+                        <div class="image i1 big"></div>
+                        <div class="image i2"></div>
+                        <div class="image i3"></div>
+                        <div class="image i4"></div>
+                        <div class="image i5"></div>
+                        <div class="image i6"></div>
+                        <div class="image i7"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+<!--//ct5  -->
+
+    <div class="ftrWrap">
+        <nav>
+            <ul>
+                <li>The Shilla Hotels & Resorts</li>
+                <li class="vb">|</li>
+                <li>The Shilla</li>
+                <li class="vb">|</li>
+                <li>Shilla Monogram</li>
+                <li class="vb">|</li>
+                <li>Shilla Stay</li>
+            </ul>
+            <ul>
+                <li>ENGLISH</li>
+                <li class="vb">|</li>
+                <li>日本語</li>
+                <li class="vb">|</li>
+                <li>中文語</li>
+            </ul>
+        </nav>
+        <footer>
+            <ul>
+                <li>(주)Lorem ipsum dolor sit amet 605-602, (zip, 383911) 사업자등록번호 1002-331-583129</li>
+                <li>Consectetur adipiscing elit. Donec ac sapien ultricies, ultrices mi vel, porttitor sem.</li>
+                <li>All rights reserved. Design by YourName</li>
+            </ul>
+            <div class="btn"><button>Customer service center 1233-4567</button></div>
+        </footer>
+    </div>
+<!-- //ftrWrap -->
+
+    <div class="gnbWrap">
+        <div class="gnbHdr">
+            <nav class="gnb">
+                <div class="btn"></div>
+
+                <ul class="lnb">
+                    <li>로그인</li>
+                    <li>리워즈가입</li>
+                    <li>예약확인</li>
+                </ul>
+
+                <ul class="nav">
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="#a">Magazine</a></li>
+                    <li><a href="#a">Contact</a></li>
+                </ul>
+
+                <menu>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </menu>
+            </nav> 
+        </div>
+    <!-- //gnbHdr -->
+        <div class="gnbImg">
+            <div class="imgGroup">
+                <div class="image i1">
+                    <div class="about">
+                        <a href="aboutUs.html">
+                            <img src="img/gnb.menu1.img1.png" alt="호텔신라">
+                            <h5>About Shilla&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="branches">
+                        <img src="img/gnb.menu1.img2.png" alt="더신라, 신라모노그램, 신라스테이 브랜드 로고">
+                        <h5>Branches&nbsp;</h5>
+                    </div>
+                </div>
+
+                <div class="image i2">
+                    <div class="theShilla">
+                        <a href="rooms.html">
+                            <img src="img/gnb.menu2.img1.png" alt="The Shilla">
+                            <h5>The Shilla&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="monogram">
+                        <img src="img/gnb.menu2.img2.png" alt="Shilla Monogram">
+                        <h5>Shilla Monogram&nbsp;</h5>
+                    </div>
+                    <div class="shillaStay">
+                        <img src="img/gnb.menu2.img3.png" alt="Shilla Stay">
+                        <h5>Shilla Stay</h5>
+                    </div>
+                </div>
+
+                <div class="image i3">
+                    <div class="diningSeoul">
+                        <img src="img/gnb.menu3.img1.png" alt="더신라서울 다이닝">
+                        <h5>The Shilla Seoul&nbsp;</h5>
+                    </div>
+                    <div class="diningJeju">
+                        <img src="img/gnb.menu3.img2.png" alt="더신라제주 다이닝">
+                        <h5>The Shilla Jeju&nbsp;</h5>
+                    </div>
+                    <div class="diningStay">
+                        <img src="img/gnb.menu3.img3.png" alt="신라스테이 다이닝">
+                        <h5>Shilla Stay&nbsp;</h5>
+                    </div>
+                </div>
+
+                <div class="image i4">
+                    <div class="package">
+                        <a href="offers.html">
+                            <img src="img/gnb.menu4.img1.png" alt="패키지 상품">
+                            <h5>Offers&nbsp;</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="image i5">
+                    <div class="hotelBooking">
+                        <a href="booking.html">
+                            <img src="img/gnb.menu5.img1.png" alt="호텔 예약">
+                            <h5>Hotel&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="diningBooking">
+                        <img src="img/gnb.menu5.img2.png" alt="다이닝 예약">
+                        <h5>Dining&nbsp;</h5>
+                    </div>
+                </div>
+
+                <div class="image i6">
+                    <div class="magazine">
+                        <img src="img/gnb.menu6.img1.png" alt="메거진">
+                        <h5>Magazine</h5>
+                    </div>
+                </div>
+
+                <div class="image i7">
+                    <form>
+                        <div class="dForm"> 
+                            <h6>구분</h6>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라리워즈</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라호텔</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라모노그램</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라스테이</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 호텔개발</label>
+                        </div>
+
+                        <div class="qForm">
+                            <h6>질문유형</h6>
+                            <select name="" id="qFrom">
+                                <option value="">선택</option>
+                                <option value="">신라리워즈가입</option>
+                                <option value="">포인트적립/사용</option>
+                                <option value="">포인트조정</option>
+                                <option value="">기타</option>
+                            </select>
+                        </div>
+
+                        <div class="userName">
+                            <h6>성명</h6>
+                            <input type="text">
+                        </div>
+
+                        <div class="cTitle">
+                            <h6>제목</h6>
+                            <input type="text">
+                        </div>
+
+                        <div class="cContent">
+                            <h6>내용</h6>
+                            <input type="text">
+                        </div>
+
+                        <div class="emailForm">
+                            <h6>이메일</h6>
+                            <input type="text">
+                        </div>
+
+                        <div class="phoneForm">
+                            <h6>휴대전화</h6>
+                            <input type="text">
+                        </div>
+
+                        <div class="prevent">
+                            <h6>자동입력방지</h6>
+                            <input type="text" placeholder="우측에 보이는 문자를 그대로 입력하세요">
+                            <img src="img/prevent.png" alt="">
+                        </div>
+
+                        <div class="agree">
+                            <label><input type="checkbox" name="agree1" id="agree1">&nbsp;필수적 개인정보 수집 및 이용에 대한 동의</label>
+                        </div>
+
+                        <div class="agree">
+                            <label><input type="checkbox" name="agree2" id="agree2">&nbsp;선택적 개인정보 수집 및 이용에 대한 동의</label>
+                            <button>보내기</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- //gnbImg -->
+    </div>
+<!-- //gnb -->
+
+</body>
+</html>

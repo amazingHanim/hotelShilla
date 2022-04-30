@@ -1,0 +1,255 @@
+div.mnWrap {
+  height: 100vh;
+  background-color: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.mnWrap main {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+div.mnWrap main h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  color: #333;
+}
+
+div.mnWrap main h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  color: #000;
+}
+
+div.mnWrap main h2 br {
+  display: none;
+}
+
+div.mnWrap main ul {
+  margin-top: 40px;
+}
+
+div.mnWrap main ul li {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  color: #555;
+}
+
+div.mnWrap main menu {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.mnWrap main menu li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  margin-right: 20px;
+  background-color: #333;
+}
+
+div.mnWrap main menu li a {
+  display: block;
+  height: 100%;
+}
+
+div.overview section {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: #999;
+  background-position: center;
+  background-size: cover;
+}
+
+div.overview {
+  margin-top: -120px;
+}
+
+div.overview section {
+  width: 100%;
+  background-image: url("../img/pic03.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+div.overview section img {
+  width: 100%;
+}
+
+div.overview section img[src*="11"] {
+  display: none;
+}
+
+div.keyfactor {
+  background-color: #ccc;
+}
+
+div.trends section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+div.trends section article:first-of-type {
+  margin-top: 0;
+}
+
+div.trends section article:nth-of-type(2n) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div.trends section article:nth-of-type(2n) .texts {
+  right: auto;
+  left: 0;
+}
+
+div.trends section article .image {
+  width: 610px;
+  height: 360px;
+  background-color: #999;
+  margin: 0 10px;
+}
+
+div.trends section article .texts {
+  width: 520px;
+  background-color: #ccc;
+  padding: 40px;
+  position: absolute;
+  right: 0;
+  margin: 0 10px;
+}
+
+div.colorSys {
+  background-color: #ccc;
+}
+
+div.colorSys header li {
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+div.colorSys header .c1 {
+  background-color: #f30;
+}
+
+div.colorSys header .c2 {
+  background-color: #f90;
+}
+
+div.colorSys header .c3 {
+  background-color: #eef;
+}
+
+div.typoSys header li {
+  width: 200px !important;
+}
+
+div.typoSys section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+div.typoSys section article {
+  border: 1px solid #ccc;
+  padding: 40px;
+  width: calc(100% / 2 - 20px);
+}
+
+div.typoSys section article.sans h4, div.typoSys section article.sans li {
+  font-family: 'Noto Sans KR';
+}
+
+div.typoSys section article.serif h4, div.typoSys section article.serif li {
+  font-family: 'Noto Serif KR';
+}
+
+div.typoSys section article ul {
+  margin-top: 20px;
+}
+
+div.typoSys section article ul li {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+div.typoSys section article ul li:last-of-type {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+div.typoSys section article:last-of-type {
+  width: calc(100% - 20px);
+}
+
+div.typoSys section article:last-of-type li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.typoSys section article:last-of-type h5 {
+  margin-right: 20px;
+}
+
+div.typoSys section article:last-of-type h5.tStyle2 {
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  font-size: 24px;
+}
+
+div.typoSys section article:last-of-type h5.tStyle3 {
+  font-family: 'Noto Sans KR';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
+}
+
+div.typoSys section article:last-of-type h5.tStyle3 + p {
+  line-height: 80px;
+}
+
+div.typoSys section article:last-of-type p {
+  font-weight: 300;
+  text-transform: none;
+}
+
+div.gridSys {
+  background-color: #ccc;
+}
+
+div.gridSys header li {
+  width: 200px !important;
+}

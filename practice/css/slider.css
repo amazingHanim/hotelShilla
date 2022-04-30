@@ -1,0 +1,68 @@
+div.content section {
+  margin-top: 0;
+  outline: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+div.content section .imgGroup {
+  width: 400%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+div.content section .imgGroup .image {
+  width: 25%;
+  height: 480px;
+  line-height: 480px;
+  text-align: center;
+}
+
+div.content section .imgGroup .i1 {
+  background-color: #fc0;
+}
+
+div.content section .imgGroup .i2 {
+  background-color: #f90;
+}
+
+div.content section .imgGroup .i3 {
+  background-color: #f60;
+}
+
+div.content section .imgGroup .i4 {
+  background-color: #99f;
+}
+
+div.content section .btns {
+  position: absolute;
+  margin: auto;
+  width: 90%;
+  left: 0;
+  right: 0;
+  height: 80px;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.content section .btns button {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+}
+
+div.content section .pageNum {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}

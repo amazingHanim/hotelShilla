@@ -1,0 +1,346 @@
+div.content {
+  padding: 0px;
+}
+
+div.content header {
+  width: 100%;
+}
+
+div.content section {
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div.content section h4 {
+  color: #fff;
+}
+
+.aboutUs {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.aboutUs > .image {
+  background-image: url(../img/aboutUs_1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 700px;
+}
+
+.aboutUs main {
+  width: 40%;
+  height: 700px;
+  min-width: 450px;
+  background-color: #1E1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.aboutUs main .texts {
+  color: #fff;
+  padding: 0 18.75% 80px 40px;
+}
+
+.aboutUs main .texts h3 {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 400;
+}
+
+.aboutUs main .texts h4 {
+  font-family: 'Noto Serif', serif;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.aboutUs main .texts p {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+div.content > .best, div.content > .awards {
+  padding: 80px 0;
+}
+
+div.content > .best header, div.content > .awards header {
+  text-align: center;
+}
+
+div.content > .best header h4, div.content > .awards header h4 {
+  font-family: 'Noto Serif', serif;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 40px;
+  color: #000;
+}
+
+div.content > .best header p, div.content > .awards header p {
+  margin-top: 40px;
+}
+
+div.content > .best.best, div.content > .awards.best {
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+div.content > .best.best .image, div.content > .awards.best .image {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.content > .best.best .image img, div.content > .awards.best .image img {
+  width: 720px;
+}
+
+div.content > .best.best .lineBtn, div.content > .awards.best .lineBtn {
+  margin-top: 20px;
+}
+
+div.content > .best.best .lineBtn a, div.content > .awards.best .lineBtn a {
+  border-bottom: solid 1px #000;
+  font-size: 18px;
+  line-height: 40px;
+  -webkit-transition: font-size,0.3s;
+  transition: font-size,0.3s;
+}
+
+div.content > .best.best .lineBtn a:hover, div.content > .awards.best .lineBtn a:hover {
+  font-size: 21px;
+}
+
+div.content > .best.awards section, div.content > .awards.awards section {
+  margin-top: 80px;
+  width: 90%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.content > .best.awards section ul.year li, div.content > .awards.awards section ul.year li {
+  margin-right: 60px;
+  position: relative;
+  line-height: 30px;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 21px;
+  color: #999;
+}
+
+div.content > .best.awards section ul.year li::after, div.content > .awards.awards section ul.year li::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -35px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: solid 1px #555;
+  border-radius: 10px;
+}
+
+div.content > .best.awards section ul.year li.lh2, div.content > .awards.awards section ul.year li.lh2 {
+  height: 60px;
+}
+
+div.content > .best.awards section ul.year li.lh3, div.content > .awards.awards section ul.year li.lh3 {
+  height: 90px;
+}
+
+div.content > .best.awards section ul.year li.lh4, div.content > .awards.awards section ul.year li.lh4 {
+  height: 120px;
+}
+
+div.content > .best.awards section ul.awardList, div.content > .awards.awards section ul.awardList {
+  position: relative;
+}
+
+div.content > .best.awards section ul.awardList::before, div.content > .awards.awards section ul.awardList::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #555;
+  top: 0;
+  left: -31.3px;
+  z-index: -1;
+}
+
+div.content > .best.awards section ul.awardList li, div.content > .awards.awards section ul.awardList li {
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUs {
+    padding: 0px;
+    display: block;
+  }
+  .aboutUs > .image {
+    background-image: url(../img/aboutUs_1.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+  .aboutUs main {
+    width: 100%;
+    height: inherit;
+    min-width: inherit;
+    background-color: #1E1E1E;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .aboutUs main .texts {
+    color: #fff;
+    padding: 40px 18.75% 80px 40px;
+    padding: 40px;
+  }
+  .aboutUs main .texts h3 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 400;
+  }
+  .aboutUs main .texts h4 {
+    font-family: 'Noto Serif', serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .aboutUs main .texts p {
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  div.content > .best, div.content > .awards {
+    padding: 80px 40px;
+  }
+  div.content > .best header, div.content > .awards header {
+    text-align: center;
+  }
+  div.content > .best header h4, div.content > .awards header h4 {
+    font-family: 'Noto Serif', serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 40px;
+    color: #000;
+  }
+  div.content > .best header p, div.content > .awards header p {
+    margin-top: 40px;
+  }
+  div.content > .best.best, div.content > .awards.best {
+    text-align: center;
+    background-color: #F2F2F2;
+  }
+  div.content > .best.best .image, div.content > .awards.best .image {
+    margin-top: 40px;
+    width: 100%;
+  }
+  div.content > .best.best .image img, div.content > .awards.best .image img {
+    width: 100%;
+  }
+  div.content > .best.best .lineBtn, div.content > .awards.best .lineBtn {
+    margin-top: 20px;
+  }
+  div.content > .best.best .lineBtn a, div.content > .awards.best .lineBtn a {
+    border-bottom: solid 1px #000;
+    font-size: 18px;
+    line-height: 40px;
+    -webkit-transition: font-size,0.3s;
+    transition: font-size,0.3s;
+  }
+  div.content > .best.best .lineBtn a:hover, div.content > .awards.best .lineBtn a:hover {
+    font-size: 21px;
+  }
+  div.content > .best.awards section, div.content > .awards.awards section {
+    margin-top: 80px;
+    width: 90%;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.content > .best.awards section ul.year li, div.content > .awards.awards section ul.year li {
+    margin-right: 60px;
+    position: relative;
+    line-height: 30px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 21px;
+    color: #999;
+  }
+  div.content > .best.awards section ul.year li::after, div.content > .awards.awards section ul.year li::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -35px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: solid 1px #555;
+    border-radius: 10px;
+  }
+  div.content > .best.awards section ul.year li.lh2, div.content > .awards.awards section ul.year li.lh2 {
+    height: 60px;
+  }
+  div.content > .best.awards section ul.year li.lh3, div.content > .awards.awards section ul.year li.lh3 {
+    height: 90px;
+  }
+  div.content > .best.awards section ul.year li.lh4, div.content > .awards.awards section ul.year li.lh4 {
+    height: 120px;
+  }
+  div.content > .best.awards section ul.awardList, div.content > .awards.awards section ul.awardList {
+    position: relative;
+  }
+  div.content > .best.awards section ul.awardList::before, div.content > .awards.awards section ul.awardList::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #555;
+    top: 0;
+    left: -31.3px;
+    z-index: -1;
+  }
+  div.content > .best.awards section ul.awardList li, div.content > .awards.awards section ul.awardList li {
+    line-height: 30px;
+    margin-top: 20px;
+  }
+}

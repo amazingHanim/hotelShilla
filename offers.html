@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shilla - Offers</title>
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\common.css">
+    <link rel="stylesheet" href="css\common.mediaQuery.css">
+    <link rel="stylesheet" href="css\offers.css">
+    <script src="js\jquery-3.6.0.min.js"></script>
+    <script src="js\offers.js"></script>
+    <script src="js\index.js"></script>
+    <script src="js\header.js"></script>
+</head>
+
+<body>
+    <div class="hdrWrap">
+        <header>
+            <h1><a href="index.html">
+                <img class="mainH" src="img/header.logo.svg" alt="The Shilla Hotels & Resorts">
+                <img class="fixedH" src="img/header.fixed.logo.svg" alt="The Shilla" style="display: none">
+            </a></h1>
+            <div class="bars">
+                <button>
+                    <img class="mainH" src="img/mainM.svg" alt="메뉴">
+                    <img class="fixedH" src="img/fixedM.svg" alt="메뉴" style="display: none;">
+                </button>
+            </div>
+            <div class="menu">
+                <div class="ovgrid">
+                    <menu>
+                        <li>로그인</li>
+                        <li>신라리워즈 가입</li>
+                        <li>예약확인 <i class="fas fa-angle-down"></i></li>
+                        <li>한국어 <i class="fas fa-angle-down"></i></li>
+                    </menu>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- //header -->
+
+    <div class="location">
+        <p>
+            <span><a href="#a"><i class="fas fa-home"></i></a></span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Offers
+        </p>
+    </div>
+    <!-- //route -->
+
+    <div class="content offers">
+        <header>
+            <h3>Offers</h3>
+            <p>합리적인 가격의 다양한 패키지 상품과 리워즈 회원 전용 혜택을 만나보세요.</p>
+        </header>
+        <!-- //cont header -->
+        <section class="filter">
+            <div class="renew">
+                <i class="fas fa-sync-alt"></i>&nbsp;초기화
+            </div>
+            <h4>기간 조회</h4>
+            <ul>
+                <li><input type="date" value="2021-12-01" min="2021-12-01"></li>
+                <li>~</li>
+                <li><input type="date" value="2021-12-02" min="2021-12-02"></li>
+                <li class="btns"><button class="blackBtn"><i class="fas fa-search"></i></button></li>
+            </ul>
+            <h4>키워드 검색</h4>
+            <div class="btns">
+                <button>야외수영장</button>
+                <button>조식</button>
+                <button>와이너리</button>
+                <button>스파</button>
+                <button>라운지 혜택</button>
+                <button>룸서비스</button>
+                <button>엑스트라 베드</button>
+                <button>카바나</button>
+                <button>G.A.O.</button>
+            </div>
+            <div class="search btns">
+                <button class="blackBtn">검색하기</button>
+            </div>
+        </section>
+        <!-- //filter -->
+        <section class="list">
+            <div class="tabMenu">
+                <h4 class="current">서울신라호텔</h4>
+                <h4>제주신라호텔</h4>
+                <h4>신라모노그램</h4>
+                <h4>신라스테이</h4>
+            </div>
+            <div class="tabCont">
+                <section>
+                    <div class="arrange">
+                        <label><input id="include" type="checkbox" checked="checked">리워즈 전용 상품 포함</label>
+                        <select name="selectPicker">
+                            <option value="lowPrice">낮은가격순</option>
+                            <option value="highPrice">높은가격순</option>
+                            <option value="recommend">추천순</option>
+                            <option value="popularity">인기순</option>
+                            <option value="recent">최신순</option>
+                        </select>
+                    </div>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_petcance.png" srcset="img\offers_petcance@2x.png 2x" alt="펫캉스">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Pet’s Vacation</h4>
+                            <h6>2021.11.01 ~ 21.12.30</h6>
+                            <p>반려동물 이리온 청담점 펫호텔 1박 투숙(1마리) + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                            <ul>
+                                <li class="price">290,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="img\offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="img\offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>박서보의 ‘묘법 No.071218’ 공동소유권(5만원) 1개 + ‘묘법’ 작품 플레이트 1개</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 …</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵(1매) + 한양도성 스팀케이크 1세트…</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_winterGateway.png" srcset="img\offers_winterGateway@2x.png 2x" alt="Family Winter Gateway">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>[Family] Winter Gateway</h4>
+                            <h6>2021.11.15 ~ 21.12.31</h6>
+                            <p>[성인 2인, 소인 1인] 키즈 텐트 1대 제공 + F&B Credit 10만원 + 가능 시, 엑스트라 베드 1개</p>
+                            <ul>
+                                <li class="price">480,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <div class="pageNum">
+                        <ul>
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- //tabCont1 -->
+                <section>
+                    <div class="arrange">
+                        <label><input id="include" type="checkbox" checked="checked">리워즈 전용 상품 포함</label>
+                        <select name="selectPicker">
+                            <option value="lowPrice">낮은가격순</option>
+                            <option value="highPrice">높은가격순</option>
+                            <option value="recommend">추천순</option>
+                            <option value="popularity">인기순</option>
+                            <option value="recent">최신순</option>
+                        </select>
+                    </div>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_winterGateway.png" srcset="img\offers_winterGateway@2x.png 2x" alt="Family Winter Gateway">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>[Family] Winter Gateway</h4>
+                            <h6>2021.11.15 ~ 21.12.31</h6>
+                            <p>[성인 2인, 소인 1인] 키즈 텐트 1대 제공 + F&B Credit 10만원 + 가능 시, 엑스트라 베드 1개</p>
+                            <ul>
+                                <li class="price">480,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_petcance.png" srcset="img\offers_petcance@2x.png 2x" alt="펫캉스">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Pet’s Vacation</h4>
+                            <h6>2021.11.01 ~ 21.12.30</h6>
+                            <p>반려동물 이리온 청담점 펫호텔 1박 투숙(1마리) + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                            <ul>
+                                <li class="price">290,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="img\offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="img\offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>박서보의 ‘묘법 No.071218’ 공동소유권(5만원) 1개 + ‘묘법’ 작품 플레이트 1개</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="./img/offers_bigWalk.png" srcset="./img/offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 …</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵(1매) + 한양도성 스팀케이크 1세트…</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <div class="pageNum">
+                        <ul>
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- //tabCont2 -->
+                <section>
+                    <div class="arrange">
+                        <label><input id="include" type="checkbox" checked="checked">리워즈 전용 상품 포함</label>
+                        <select name="selectPicker">
+                            <option value="lowPrice">낮은가격순</option>
+                            <option value="highPrice">높은가격순</option>
+                            <option value="recommend">추천순</option>
+                            <option value="popularity">인기순</option>
+                            <option value="recent">최신순</option>
+                        </select>
+                    </div>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 …</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵(1매) + 한양도성 스팀케이크 1세트…</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_petcance.png" srcset="img\offers_petcance@2x.png 2x" alt="펫캉스">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Pet’s Vacation</h4>
+                            <h6>2021.11.01 ~ 21.12.30</h6>
+                            <p>반려동물 이리온 청담점 펫호텔 1박 투숙(1마리) + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                            <ul>
+                                <li class="price">290,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="img\offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="img\offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>박서보의 ‘묘법 No.071218’ 공동소유권(5만원) 1개 + ‘묘법’ 작품 플레이트 1개</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_winterGateway.png" srcset="img\offers_winterGateway@2x.png 2x" alt="Family Winter Gateway">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>[Family] Winter Gateway</h4>
+                            <h6>2021.11.15 ~ 21.12.31</h6>
+                            <p>[성인 2인, 소인 1인] 키즈 텐트 1대 제공 + F&B Credit 10만원 + 가능 시, 엑스트라 베드 1개</p>
+                            <ul>
+                                <li class="price">480,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <div class="pageNum">
+                        <ul>
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- //tabCont3 -->
+                <section>
+                    <div class="arrange">
+                        <label><input id="include" type="checkbox" checked="checked">리워즈 전용 상품 포함</label>
+                        <select name="selectPicker">
+                            <option value="lowPrice">낮은가격순</option>
+                            <option value="highPrice">높은가격순</option>
+                            <option value="recommend">추천순</option>
+                            <option value="popularity">인기순</option>
+                            <option value="recent">최신순</option>
+                        </select>
+                    </div>
+                    <article>
+                        <div class="image">
+                            <img src="./img/offers_FallInArt2.png" srcset="./img/offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt2.png" srcset="./img/offers_FallInArt2@2x.png 2x" alt="폴인아트2">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 2</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>박서보의 ‘묘법 No.071218’ 공동소유권(5만원) 1개 + ‘묘법’ 작품 플레이트 1개</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_petcance.png" srcset="img\offers_petcance@2x.png 2x" alt="펫캉스">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Pet’s Vacation</h4>
+                            <h6>2021.11.01 ~ 21.12.30</h6>
+                            <p>반려동물 이리온 청담점 펫호텔 1박 투숙(1마리) + [객실 타입별 혜택] 더 이그제큐티브 라운지 입장</p>
+                            <ul>
+                                <li class="price">290,000~</li>
+                                <li class="btns"i>
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_FallInArt.png" srcset="img\offers_FallInArt@2x.png 2x" alt="폴인아트">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Fall in art 1</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 박서보의 ‘묘법 No.071218’ 공동소유권(5만원)</p>
+                            <ul>
+                                <li class="price">300,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts rOnly">
+                            <h5>Rewards only</h5>
+                            <h4>Rewards Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>리워즈 1만P + 등급 숙박 일수 1박 +‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵 …</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_bigWalk.png" srcset="img\offers_bigWalk@2x.png 2x" alt="빅워크 걸음 기부 캠페인">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>Give Your Bigwalk</h4>
+                            <h6>2021.12.01 ~ 2021.12.31</h6>
+                            <p>‘빅워크’ 걸음 기부 캠페인 참여 + 한양도성 성곽길 가이드 맵(1매) + 한양도성 스팀케이크 1세트…</p>
+                            <ul>
+                                <li class="price">340,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image">
+                            <img src="img\offers_winterGateway.png" srcset="img\offers_winterGateway@2x.png 2x" alt="Family Winter Gateway">
+                        </div>
+                        <div class="texts allCust">
+                            <h5>For all customers</h5>
+                            <h4>[Family] Winter Gateway</h4>
+                            <h6>2021.11.15 ~ 21.12.31</h6>
+                            <p>[성인 2인, 소인 1인] 키즈 텐트 1대 제공 + F&B Credit 10만원 + 가능 시, 엑스트라 베드 1개</p>
+                            <ul>
+                                <li class="price">480,000~</li>
+                                <li class="btns">
+                                    <label for="moreInfo">혜택 및 이용안내 <i class="fas fa-plus-circle"></i></label>
+                                    <button class="blackBtn">예약하기</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <div class="pageNum">
+                        <ul>
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- //tabCont4 -->
+            </div>
+        </section>
+        <!-- //list -->
+    </div>
+    <!-- //offers -->
+
+    <div class="ftrWrap">
+        <nav>
+            <ul>
+                <li>The Shilla Hotels & Resorts</li>
+                <li class="vb">|</li>
+                <li>The Shilla</li>
+                <li class="vb">|</li>
+                <li>Shilla Monogram</li>
+                <li class="vb">|</li>
+                <li>Shilla Stay</li>
+            </ul>
+            <ul>
+                <li>ENGLISH</li>
+                <li class="vb">|</li>
+                <li>日本語</li>
+                <li class="vb">|</li>
+                <li>中文語</li>
+            </ul>
+        </nav>
+        <footer>
+            <ul>
+                <li>(주)Lorem ipsum dolor sit amet 605-602, (zip, 383911) 사업자등록번호 1002-331-583129</li>
+                <li>Consectetur adipiscing elit. Donec ac sapien ultricies, ultrices mi vel, porttitor sem.</li>
+                <li>All rights reserved. Design by YourName</li>
+            </ul>
+            <div class="btn"><button>Customer service center 1233-4567</button></div>
+        </footer>
+    </div>
+    <!-- //footer -->
+    <div class="gnbWrap">
+        <div class="gnbHdr">
+            <nav class="gnb">
+                <div class="btn"></div>
+                <ul class="lnb">
+                    <li>로그인</li>
+                    <li>리워즈가입</li>
+                    <li>예약확인</li>
+                </ul>
+                <ul class="nav">
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="#a">Magazine</a></li>
+                    <li><a href="#a">Contact</a></li>
+                </ul>
+                <menu>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </menu>
+            </nav> 
+        </div>
+        <div class="gnbImg">
+            <div class="imgGroup">
+                <div class="image i1">
+                    <div class="about">
+                        <a href="aboutUs.html">
+                            <img src="img/gnb.menu1.img1.png" alt="호텔신라">
+                            <h5>About Shilla&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="branches">
+                        <img src="img/gnb.menu1.img2.png" alt="더신라, 신라모노그램, 신라스테이 브랜드 로고">
+                        <h5>Branches&nbsp;</h5>
+                    </div>
+                </div>
+                <div class="image i2">
+                    <div class="theShilla">
+                        <a href="rooms.html">
+                            <img src="img/gnb.menu2.img1.png" alt="The Shilla">
+                            <h5>The Shilla&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="monogram">
+                        <img src="img/gnb.menu2.img2.png" alt="Shilla Monogram">
+                        <h5>Shilla Monogram&nbsp;</h5>
+                    </div>
+                    <div class="shillaStay">
+                        <img src="img/gnb.menu2.img3.png" alt="Shilla Stay">
+                        <h5>Shilla Stay</h5>
+                    </div>
+                </div>
+                <div class="image i3">
+                    <div class="diningSeoul">
+                        <img src="img/gnb.menu3.img1.png" alt="더신라서울 다이닝">
+                        <h5>The Shilla Seoul&nbsp;</h5>
+                    </div>
+                    <div class="diningJeju">
+                        <img src="img/gnb.menu3.img2.png" alt="더신라제주 다이닝">
+                        <h5>The Shilla Jeju&nbsp;</h5>
+                    </div>
+                    <div class="diningStay">
+                        <img src="img/gnb.menu3.img3.png" alt="신라스테이 다이닝">
+                        <h5>Shilla Stay&nbsp;</h5>
+                    </div>
+                </div>
+                <div class="image i4">
+                    <div class="package">
+                        <a href="offers.html">
+                            <img src="img/gnb.menu4.img1.png" alt="패키지 상품">
+                            <h5>Offers&nbsp;</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="image i5">
+                    <div class="hotelBooking">
+                        <a href="booking.html">
+                            <img src="img/gnb.menu5.img1.png" alt="호텔 예약">
+                            <h5>Hotel&nbsp;</h5>
+                        </a>
+                    </div>
+                    <div class="diningBooking">
+                        <img src="img/gnb.menu5.img2.png" alt="다이닝 예약">
+                        <h5>Dining&nbsp;</h5>
+                    </div>
+                </div>
+                <div class="image i6">
+                    <div class="magazine">
+                        <img src="img/gnb.menu6.img1.png" alt="메거진">
+                        <h5>Magazine</h5>
+                    </div>
+                </div>
+                <div class="image i7">
+                    <form>
+                        <div class="dForm"> 
+                            <h6>구분</h6>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라리워즈</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라호텔</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라모노그램</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 신라스테이</label>
+                            <label><input type="radio" name="distinction" id="distinct"> 호텔개발</label>
+                        </div>
+                        <div class="qForm">
+                            <h6>질문유형</h6>
+                            <select name="" id="qFrom">
+                                <option value="">선택</option>
+                                <option value="">신라리워즈가입</option>
+                                <option value="">포인트적립/사용</option>
+                                <option value="">포인트조정</option>
+                                <option value="">기타</option>
+                            </select>
+                        </div>
+                        <div class="userName">
+                            <h6>성명</h6>
+                            <input type="text">
+                        </div>
+                        <div class="cTitle">
+                            <h6>제목</h6>
+                            <input type="text">
+                        </div>
+                        <div class="cContent">
+                            <h6>내용</h6>
+                            <input type="text">
+                        </div>
+                        <div class="emailForm">
+                            <h6>이메일</h6>
+                            <input type="text">
+                        </div>
+                        <div class="phoneForm">
+                            <h6>휴대전화</h6>
+                            <input type="text">
+                        </div>
+                        <div class="prevent">
+                            <h6>자동입력방지</h6>
+                            <input type="text" placeholder="우측에 보이는 문자를 그대로 입력하세요">
+                            <img src="img/prevent.png" alt="">
+                        </div>
+                        <div class="agree">
+                            <label><input type="checkbox" name="agree1" id="agree1">&nbsp;필수적 개인정보 수집 및 이용에 대한 동의</label>
+                        </div>
+                        <div class="agree">
+                            <label><input type="checkbox" name="agree2" id="agree2">&nbsp;선택적 개인정보 수집 및 이용에 대한 동의</label>
+                            <button>보내기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- //gnb -->
+</body>
+</html>

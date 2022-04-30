@@ -1,0 +1,349 @@
+@media screen and (max-width:1140px){
+    div.mnWrap{
+        main{
+            width: calc(100% - 40px);
+            min-width: 900px;
+            header{
+                .texts{
+                    .shortcut{
+                        .ovgrid{
+                            width: calc((100vw - 900px) / 2 + 100%);
+                        }
+                    }
+                }
+            }
+            section{
+                .imgGroup{
+                    width: calc((100vw - 900px) / 2 + 100%);
+                }
+            }
+        }
+    }
+    div.ct1{
+        section{
+            .ovgrid{
+                width: calc((100vw - 900px) / 2 + 100%);
+            }
+        }
+    }
+    div.ct2{
+        section{
+            display: block;
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: calc(100% - 40px);
+                margin-bottom: 20px;
+                h3:first-of-type{
+                    display: none;
+                }
+                h3:last-of-type{
+                    display: block;
+                    font-size: 60px;
+                }
+                .btns{
+                    margin: 0;
+                }
+            }
+            .artview{
+                width: calc(100% - 40px);
+                margin: 0 auto;
+            }
+        }
+    }
+    div.ct3{
+        header{
+            &::before{
+                width: calc((100vw - 900px) / 2 + 100%);
+                height: 300px;
+            }
+        }
+    }
+    div.ct5{
+        &>section{
+            .imgInfo{
+                min-width: 260px;
+                .btnGroup{
+                    .more{
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:930px){
+    div.mnWrap{
+        main{
+            width: calc(100% - 40px);
+            min-width: 700px;
+            header{
+                .texts{
+                    h2{
+                        font-size: 64px;
+                    }
+                    .shortcut{
+                        display: none;
+                    }
+                }
+            }
+            section{
+                .imgGroup{
+                    width: calc((100vw - 700px) / 2 + 100%);
+                }
+            }
+        }
+    }
+    div.booking{
+        display: flex;
+        width: calc(100% - 100px);
+        margin: 0 auto;
+    }
+    div.ct1{
+        section{
+            .ovgrid{
+                width: calc((100vw - 700px) / 2 + 100%);
+            }
+        }
+    }
+    div.ct3{
+        header{
+            &::before{
+                width: calc((100vw - 700px) / 2 + 100%);
+                height: 330px;
+            }
+        }
+    }
+    div.ct4{
+        section{
+            .artgroup{
+                article{
+                    h4{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:740px){
+    div.mnWrap{
+        main{
+            width: calc(100% - 40px);
+            min-width: 500px;
+            header{
+                .texts{
+                    left: -30px;
+                    h5,h2,p{
+                        width: 370px;
+                    }
+                    .pagenation{
+                        position: relative;
+                        left: 80px;
+                    }
+                    .shortcut{
+                        display: none;
+                    }
+                }
+            }
+            section{
+                .imgGroup{
+                    width: calc((100vw - 500px) / 2 + 100%);
+                    .image{
+                        background-color: rgba(255,255,255,0.15);
+                        background-blend-mode: color;
+                    }
+                }
+            }
+        }
+    }
+
+    div.ct1{
+        section{
+            .ovgrid{
+                width: calc((100vw - 500px) / 2 + 100%);
+            }
+        }
+    }
+    div.ct2{
+        section{
+            header{
+                h3:last-of-type{
+                    display: block;
+                }
+                .btns{
+                    margin: 0;
+                }
+            }
+            .artview{
+                width: calc(100% - 40px);
+                margin: 0 auto;
+                .artgroup{
+                    width: 100%;
+                    article{
+                        width: calc(100% / 7);
+                        .texts{
+                            h4{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.ct3{
+        header{
+            &::before{
+                width: calc((100vw - 500px) / 2 + 100%);
+                height: 440px;
+            }
+        }
+    }
+    div.ct4{
+        section{
+            display: block;
+            .imgView{
+                width:calc(100% - 20px);
+                height: 200px;
+            }
+            .artgroup{
+                width: calc(100% - 20px);
+                margin-top: 20px;
+                article{
+                    height: 120px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:590px){
+    div.mnWrap{
+        main{
+            width: calc(100% - 40px);
+            min-width: 400px;
+            section{
+                .imgGroup{
+                    width: calc((100vw - 400px) / 2 + 100%);
+                }
+            }
+        }
+    }
+    div.ct1{
+        section{
+            .ovgrid{
+                width: calc((100vw - 400px) / + 100%);
+            }
+        }
+    }
+    div.ct3{
+        header{
+            &::before{
+                width: calc((100vw - 400px) / 2 + 100%);
+                height: 480px;
+            }
+        }
+    }
+
+    div.ct5{
+        &>section{
+            & > .imgInfo{
+                width: 20%;
+                min-width: 220px;
+                padding: 0 10px 0 20px;
+                .textGroup{
+                    .texts{
+                        h4{
+                            font-size: 14px;
+                            span{
+                                font-size: 18px;
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .btnGroup{
+                    .more{
+                        padding: 0 10px;
+                    }
+                }
+            }
+            &>.imgWrap{
+                width: 80%;
+                .ovgrid{
+                    width: calc((100vw - 400px) / 2 + 100%);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:479px){
+    div.mnWrap{
+        main{
+            width: calc(100% - 40px);
+            min-width: 375px;
+            section{
+                .imgGroup{
+                    width: calc((100vw - 375px) / 2 + 100%);
+                }
+            }
+        }
+    }
+    div.ct1{
+        section{
+            .ovgrid{
+                width: calc((100vw - 375px) / + 100%);
+            }
+        }
+    }
+    div.ct2{
+        section{
+            header{
+                align-items: flex-end;
+                .btns{
+                    position: relative;
+                    left: -80px;
+                }
+            }
+            .artview{
+                width: calc(100% - 40px);
+                margin: 0 auto;
+                .artgroup{
+                    width: 100%;
+                    article{
+                        width: calc(100% / 5);
+                        .topText{
+                            h6{
+                                font-size: 12px;
+                            }
+                        }
+                        .texts{
+                            h4{
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.ct3{
+        header{
+            &::before{
+                width: calc((100vw - 375px) / 2 + 100%);
+                height: 480px;
+            }
+        }
+    }
+    div.ct5{
+        &>section{
+            & > .imgInfo{
+                width: 20%;
+                max-width: 340px;
+            }
+        }
+    }
+}

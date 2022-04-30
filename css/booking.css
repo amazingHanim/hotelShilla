@@ -1,0 +1,990 @@
+.circle {
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ctBooking {
+  padding: 0 0 80px 0 !important;
+}
+
+section.select header {
+  padding: 0;
+  margin: 0 10px;
+}
+
+section.select header p {
+  font-size: 22px;
+  font-family: "Noto Sans KR";
+  font-weight: 100;
+  line-height: 40px;
+}
+
+section.select header p span {
+  font-family: "Noto Serif KR";
+  font-weight: 400;
+}
+
+section.select header ol.stepImg {
+  margin-top: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.select header ol.stepImg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 50%;
+  border-bottom: dotted #000 2px;
+  z-index: -1;
+}
+
+section.select header ol.stepImg > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #fff;
+  border: solid 1px #000;
+  box-sizing: border-box;
+  line-height: 38px;
+}
+
+section.select header ol.stepImg > li.on {
+  color: #fff;
+  background-color: #000;
+}
+
+section.select header ol.stepImg > li span {
+  font-size: 14px;
+}
+
+section.select article.selectBox {
+  margin-top: 20px;
+  height: 120px;
+  border-radius: 60px;
+  color: #707070;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+section.select article.selectBox ul.selectOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+section.select article.selectBox ul.selectOptions > li {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+section.select article.selectBox ul.selectOptions > li:last-child {
+  margin-top: 15px;
+}
+
+section.select article.selectBox ul.selectOptions > li > div.circle {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: 2px dotted rgba(0, 0, 0, 0.1);
+}
+
+section.select article.selectBox ul.selectOptions > li > div.circle span {
+  color: #707070;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li {
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li:first-child {
+  margin-bottom: 5px;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li > .circle {
+  display: inline-block;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li > .circle span {
+  position: relative;
+  top: -2px;
+  line-height: 30px;
+  color: #fff;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li span {
+  color: #707070;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li input[type=date] {
+  width: 120px;
+  border: none;
+  color: #707070;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li input[type=number] {
+  width: 40px;
+  border: none;
+  text-align: center;
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li i {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+section.select article.selectBox ul.selectOptions > li > ul > li i:hover {
+  color: #0065AF;
+}
+
+section.select article.selectBox ul.selectOptions > li.se::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  margin-left: 30px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+section.select article.selectBox ul.selectOptions .searchIcon {
+  width: 50px;
+  height: 40px;
+  background-image: url(../img/search.icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section.select article.selectBox ul.selectOptions .searchIcon:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: url(../img/search.hover.icon.svg);
+}
+
+.tabContent {
+  padding: 60px;
+  border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+section.selectedInfo .tabBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.selectedInfo .tabBar .tb {
+  cursor: pointer;
+  width: 100%;
+  line-height: 60px;
+  border: solid 1px #EFEFEF;
+  border-bottom: solid 2px #000;
+  border-radius: 30px 30px 0px 0px;
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.selectedInfo .tabBar .tb.on {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+section.selectedInfo .tabContent .tc {
+  display: none;
+}
+
+section.selectedInfo .tabContent .tc.on {
+  display: block;
+}
+
+section.selectedInfo .tabContent .tc .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_1 h4 {
+  margin-right: 15px;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_1 h4 a {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #707070;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_1 h4.on > a {
+  color: #000;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_2 > button {
+  color: #707070;
+  border: 1px solid #707070;
+  height: 30px;
+  padding: 0px 20px;
+  margin-right: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_2 > button:hover {
+  border-color: #0065AF;
+  background-color: #0065AF;
+  color: #fff;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_2 > button i {
+  font-size: 14px;
+  line-height: 28px;
+}
+
+section.selectedInfo .tabContent .tc .filter .fil_2 select {
+  border-radius: 20px;
+  padding: 0 20px;
+  border-color: #707070;
+  color: #707070;
+  height: 30px;
+}
+
+section.selectedInfo .tabContent .tc .keyword {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 30px;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent {
+  width: 100%;
+  margin: 0;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent header h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Noto Sans";
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent header .renew {
+  font-size: 12px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent header .renew:hover {
+  margin-right: 10px;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section ul li {
+  font-family: "Noto Sans";
+  line-height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section ul li:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section ul li.on {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section .btns {
+  margin-top: 10px;
+}
+
+section.selectedInfo .tabContent .tc .keyword .keyContent > section .btns button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #0065AF;
+}
+
+section.selectedInfo .tabContent .alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Noto Sans";
+  line-height: 60px;
+}
+
+section.selectedInfo .tabContent .alert span {
+  text-decoration: underline;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+section.selectedInfo .tabContent article.art {
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+}
+
+section.selectedInfo .tabContent article.art:first-of-type {
+  margin-top: 0;
+}
+
+section.selectedInfo .tabContent article.art:first-of-type .detail {
+  display: block;
+}
+
+section.selectedInfo .tabContent article.art .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+section.selectedInfo .tabContent article.art .info .image {
+  width: 200px;
+  height: 160px;
+}
+
+section.selectedInfo .tabContent article.art .info .i1 {
+  background-image: url(../img/booking1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.selectedInfo .tabContent article.art .info .i2 {
+  background-image: url(../img/booking2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.selectedInfo .tabContent article.art .info .i3 {
+  background-image: url(../img/booking3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.selectedInfo .tabContent article.art .info .i4 {
+  background-image: url(../img/booking4.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.selectedInfo .tabContent article.art .info .i5 {
+  background-image: url(../img/booking5.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.selectedInfo .tabContent article.art .info .i6 {
+  background-image: url(../img/booking6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section.selectedInfo .tabContent article.art .info .texts {
+  width: calc(100% - 240px);
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .top h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .top p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .top p span {
+  font-weight: 400;
+  color: #000;
+  font-size: 22px;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .content {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 80%;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .btns .benefit span {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #0065AF;
+  margin-right: 20px;
+}
+
+section.selectedInfo .tabContent article.art .info .texts .btns button {
+  padding: 5px 15px;
+}
+
+section.selectedInfo .tabContent article.art .detail {
+  display: none;
+  padding: 30px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room {
+  margin-top: 10px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room:first-of-type {
+  margin-top: 0;
+}
+
+section.selectedInfo .tabContent article.art .detail .room h5 {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li {
+  font-family: "Noto Sans KR";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 30px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .leftS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .leftS label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .leftS label img {
+  width: 20px;
+  margin: 0 10px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .leftS label span {
+  width: 50px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .leftS .add {
+  margin-left: 5px;
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .rightS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .rightS .price {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+section.selectedInfo .tabContent article.art .detail .room .selectRoom li .rightS .another {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1140px) {
+  section.select article.selectBox {
+    padding: 0 30px;
+  }
+  section.select article.selectBox ul.selectOptions > li {
+    padding: 0;
+  }
+  section.select article.selectBox ul.selectOptions > li:not(:first-child) {
+    padding-left: 15px;
+  }
+  section.select article.selectBox ul.selectOptions > li.se::after {
+    margin-left: 15px;
+  }
+  .tabContent .tc .keyword {
+    padding: 20px;
+  }
+  .tabContent .tc .keyword .keyContent > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: auto;
+    min-width: 0;
+  }
+  .tabContent .tc .keyword .keyContent > section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabContent .tc .keyword .keyContent > section ul li {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  section.select article.selectBox {
+    padding: 0 20px;
+  }
+  section.select article.selectBox ul.selectOptions > li {
+    padding: 0;
+  }
+  section.select article.selectBox ul.selectOptions > li > div.circle {
+    width: 40px;
+    height: 40px;
+  }
+  section.select article.selectBox ul.selectOptions > li > div.circle span {
+    font-size: 12px;
+  }
+  section.select article.selectBox ul.selectOptions > li > ul > li > .circle {
+    display: inline;
+    background-color: transparent;
+  }
+  section.select article.selectBox ul.selectOptions > li > ul > li > .circle span {
+    font-size: 12px;
+    color: #707070;
+    font-weight: 600;
+  }
+  section.select article.selectBox ul.selectOptions > li:not(:first-child) {
+    padding-left: 10px;
+  }
+  section.select article.selectBox ul.selectOptions > li.se::after {
+    margin-left: 10px;
+  }
+  .tabContent .tc .keyword {
+    padding: 15px;
+  }
+  .tabContent .tc .keyword .keyContent > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: auto;
+    min-width: 0;
+  }
+  .tabContent .tc .keyword .keyContent > section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .tabContent .tc .keyword .keyContent > section ul li {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.select article.selectBox {
+    height: auto;
+    padding: 20px;
+    border-radius: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.select article.selectBox ul.selectOptions {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.select article.selectBox ul.selectOptions > li {
+    margin: 10px 0;
+  }
+  section.select article.selectBox ul.selectOptions > li:last-child {
+    margin: 0;
+  }
+  section.select article.selectBox ul.selectOptions > li > div.circle {
+    width: 40px;
+    height: 40px;
+  }
+  section.select article.selectBox ul.selectOptions > li > div.circle span {
+    font-size: 12px;
+  }
+  section.select article.selectBox ul.selectOptions > li > ul > li > .circle {
+    display: inline;
+    background-color: transparent;
+  }
+  section.select article.selectBox ul.selectOptions > li > ul > li > .circle span {
+    font-size: 12px;
+    color: #707070;
+    font-weight: 600;
+  }
+  section.select article.selectBox ul.selectOptions > li:not(:first-child) {
+    padding-left: 0;
+  }
+  section.select article.selectBox ul.selectOptions > li.se::after {
+    display: none;
+  }
+  section.selectedInfo .tabContent article.art .info .texts .top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.selectedInfo .tabContent article.art .info .texts .top h3, section.selectedInfo .tabContent article.art .info .texts .top p {
+    margin-bottom: 5px;
+  }
+  section.selectedInfo .tabContent article.art .info .texts .top p span {
+    font-size: 18px;
+    color: #AF6C00;
+  }
+  section.selectedInfo .tabContent article.art .info .texts p.content {
+    width: 100%;
+    max-height: 85px;
+    overflow-y: scroll;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  section.selectedInfo .tabContent {
+    padding: 40px 60px;
+  }
+  section.selectedInfo .tabContent .tc .filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.selectedInfo .tabContent .tc .filter .fil_1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section.selectedInfo .tabContent .tc .filter .fil_2 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  section.selectedInfo .tabContent .tc .alert {
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  section.selectedInfo .tabContent .tc article.art .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  section.selectedInfo .tabContent .tc article.art .info .image {
+    width: 100%;
+  }
+  section.selectedInfo .tabContent .tc article.art .info .texts {
+    width: 100%;
+    margin-top: 5px;
+  }
+  section.selectedInfo .tabContent .tc article.art .info .texts .top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.selectedInfo .tabContent {
+    padding: 30px 40px;
+  }
+  section.selectedInfo .tabContent .tc article.art .detail .room .selectRoom li .leftS .add {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  section.selectedInfo .tabContent {
+    padding: 20px 30px 30px 30px;
+  }
+  section.selectedInfo .tabContent .alert {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 0;
+  }
+  section.selectedInfo .tabContent .alert p {
+    line-height: 20px;
+  }
+  section.selectedInfo .tabContent .alert p:last-of-type {
+    padding-left: 8px;
+  }
+  section.selectedInfo .tabContent .tc article.art .detail .room .selectRoom li .rightS .another {
+    display: none;
+  }
+}
