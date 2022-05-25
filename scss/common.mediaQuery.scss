@@ -18,6 +18,8 @@
         }
     }
     div.content{
+        overflow: hidden;//추가함
+
         section{
             min-width: 920px;
         }
@@ -54,6 +56,7 @@
 @media screen and (max-width:930px){
     div.hdrWrap{
         header{
+            
             width: calc(100% - 40px);
             min-width: 850px;
             .menu{

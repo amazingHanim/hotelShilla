@@ -9,6 +9,9 @@
   div.hdrWrap header .menu menu li:last-child {
     display: none;
   }
+  div.content {
+    overflow: hidden;
+  }
   div.content section {
     min-width: 920px;
   }

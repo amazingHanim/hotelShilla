@@ -1,6 +1,8 @@
 
 div.mnWrap{
     background-color: rgb(255, 254, 254);
+    overflow: hidden; //추가함
+
     main{
         width: calc(100% - 40px);
         max-width: 1080px;

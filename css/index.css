@@ -1,5 +1,6 @@
 div.mnWrap {
   background-color: #fffefe;
+  overflow: hidden;
 }
 
 div.mnWrap main {
